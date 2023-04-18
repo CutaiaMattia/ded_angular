@@ -1,0 +1,177 @@
+[
+  {
+    "nome": "Celare",
+    "descrizione": "Il soggetto è invisibile alla vista e allo scrutamento; fa cadere la creatura in uno stato comatoso",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Esilio",
+    "descrizione": "Bandisce 2 DV per livello di creature extraplanari",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Riflettere incantesimo",
+    "descrizione": "Riflette 1d4+6 livelli di incantesimo contro chi ha lanciato l'incantesimo",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Blocca persone dimassa",
+    "descrizione": "Come blocca persone, ma tutti entro 9 m",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Demenza",
+    "descrizione": "Il soggetto è in preda a una confusione continua",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Parola del potere, accecare",
+    "descrizione": "Acceca una creatura con 200 pf o meno",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Simbolo di stordimento",
+    "descrizione": "Runa che stordisce le creature vicine",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Scrutare superiore",
+    "descrizione": "Come scrutare, ma più velocemente e più a lungo",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Visione",
+    "descrizione": "Come conoscenza delle leggende, ma più veloce e faticosa",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Vista arcana superiore",
+    "descrizione": "Come vista arcana, ma rivela anche gli effetti magici sulle creature e sugli oggetti",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Evoca mostri VII",
+    "descrizione": "Richiama una creatura extraplanare che combatte per l'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Evocazioni istantanee di Drawmij",
+    "descrizione": "Un oggetto preparato appare nella mano dell'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Porta in fase",
+    "descrizione": "Crea un passaggio invisibile attraverso il legno o la pietra",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Reggia meravigliosa di Mordenkainen'",
+    "descrizione": "Una porta conduce a una reggia extradimensionale",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Spostamento planare'",
+    "descrizione": "Fino a ottosoggetti viaggiano su un altro piano",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Teletrasporto degli oggetti",
+    "descrizione": "Come teletrasporto, ma ha effetto su un oggetto toccato",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Teletrasporto superiore",
+    "descrizione": "Come teletrasporto, ma senza limiti di raggio di azion",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Immagine proiettata",
+    "descrizione": "Un sosia illusorio in grado di parlare e lanciare incantesimi",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Invisibilità di massa",
+    "descrizione": "Come invisibilità, ma ha effetto su tutti i presemi nel raggio di azione",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Ombra di una evocazione superiore",
+    "descrizione": "Come ombra di una evocazione, ma fino al 6° livello e reali al 60%",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Simulacro",
+    "descrizione": "Crea un sosia parzialmente reale di una creatura",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Gabbia di forza to",
+    "descrizione": "Un cubo o una gabbia di forza che imprigiona tutti al suo interno",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Mano stringente di Bigby",
+    "descrizione": "Una mano che fornisce copertura, spinge o lotta",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Palla di fuoco ritardata",
+    "descrizione": "1d6 danni da fuoco per livello ; è possibile ritardare l'esplosione per 5 round",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Spada di Mordenkainen'",
+    "descrizione": "Una lama magica fluttuante che colpisce gli avversari",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Spruzzo prismatico",
+    "descrizione": "Un raggio che colpisce i soggetti con una varietà di effetti",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Controllare non morti",
+    "descrizione": "I non morti non attaccano l'incantatore finché rimangono sotto il suo comando",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Dito della morte",
+    "descrizione": "Uccide un soggetto",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Onde di esaurimento",
+    "descrizione": "Parecchi bersagli diventano esausti",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Simbolo di debolezza",
+    "descrizione": "Runa che indebolisce le creature vicine",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Controllare tempo atmosferico",
+    "descrizione": "Cambia il tempo atmosferico in un'area",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Inversione della gravità",
+    "descrizione": "Gli oggetti e le creature cadono verso l'alto",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Statua",
+    "descrizione": "Un soggetto può trasformarsi in statua a suo piacimento",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Transizione eterea",
+    "descrizione": ".:incantatore diventa etereo per 1 round per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Desiderio limitato",
+    "descrizione": "Altera la realtà, entro i termini consentiti dall'incantesimo",
+    "scuola": "Universale"
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "nome": "Disgiunzione di Mordenkainen",
+    "descrizione": "magia e disincanta oggetti magici",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Imprigionare",
+    "descrizione": "Seppellisce il soggetto sotto terra",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Libertà",
+    "descrizione": "Libera le creature sotto gli effetti di imprigionare",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Sfera prismatica",
+    "descrizione": "Come muro prismatico ma circonda da ogni lato",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Blocca mostri di massa",
+    "descrizione": "Come blocca mostri, ma tutti i presenti entro 9 m",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Dominare mostri",
+    "descrizione": "Come dominare persone, ma su qualsiasi creatura",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Parola del potere, uccidere",
+    "descrizione": "Uccide una creatura con 100 pf o men",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Cerchio di teletrasporto",
+    "descrizione": "Un cerchio teletrasporta qualsiasi creatura che vi entri in un posto prestabilito",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Evoca mostri IX",
+    "descrizione": "Richiama una creatura extraplanare che combatte per l'incantatore.",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Portale'",
+    "descrizione": "Collega due piani per viaggiare o per evocare creatur",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Rifugio",
+    "descrizione": "Altera un oggetto per trasportare il suo possessore fino all'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Fatale",
+    "descrizione": "Come allucinazione mortale, ma ha effetto su tutti i presenti entro 9 m",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Ombre",
+    "descrizione": "Come ombra di una evocazione, ma fino all'8° livello e reali all'80%",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Mano stritolatrice di Bigby",
+    "descrizione": "Una mano Grande che fornisce copertura, spinge o schiaccia i nemici dell'incantatore",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Sciame di meteore",
+    "descrizione": "Quattro sfere esplosive di cui ognuna infligge 6d6 danni da fuoco",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Lamento della banshee",
+    "descrizione": "Uccide una creatura per livello",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Legare anima",
+    "descrizione": "Intrappola un'anima appena morta per impedirne la resurrezione",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Proiezione astrale",
+    "descrizione": "Proietta l'incantatore e i suoi compagni sul Piano Astrale",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Risucchio di energia",
+    "descrizione": "Il soggetto ottiene 2d4 livelli negativi",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Fermare il tempo",
+    "descrizione": "L'incantatore può agire liberamente per 1d4+1 round",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Forma eterea",
+    "descrizione": "Per viaggiare sul Piano Etereo con i compagni",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Trasformazione",
+    "descrizione": "Eincantatore si trasforma in qualsiasi creatura e può cambiare forma una volta per round",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Desiderio",
+    "descrizione": "Come desiderio limitato, ma con meno limiti",
+    "scuola": "Universale"
+  }
+]

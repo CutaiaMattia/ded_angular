@@ -1,2 +1,249 @@
-<p>wizard works!</p>
-<button routerLink="/"> homepage </button>
+<app-header></app-header>
+<div *ngIf="!isSpellsPage; else spellPage" >
+
+  <div class="flex container-fluid">
+
+<div class="container-fluid container-extend">
+
+  <div class="row">
+    <h5 class="col-auto">
+      nome : {{pg.nomePG}}
+    </h5>
+    <h5 class="col-auto">
+      cognome: {{pg.cognomePG}}
+    </h5>
+  </div>
+  <div class="row">
+    <h5 class="col-auto">
+      razza : {{pg.razza}}
+    </h5>
+    <h5 class="col-auto">
+      classe: {{pg.classe}}
+    </h5>
+  </div>
+  <div class="row">
+    <h5 class="col-auto">
+      CA :  {{ca}}
+    </h5>
+    <h5 class="col-auto">
+      Iniziativa: {{iniziativa}}
+    </h5>
+    <h5 class="col-auto">
+      BaB :
+      <div class="mx-3" *ngIf="lvlPG<=10; else doubleValue">
+        +{{Bab[pg.livello][0]}}
+      </div>
+      <ng-template #doubleValue>
+        +{{Bab[pg.livello][0]}} /
+        +{{Bab[pg.livello][1]}}
+      </ng-template>
+    </h5>
+  </div>
+  <div class="row">
+    <h5 class="col-auto">
+      tempra :
+      <div class="mx-3">
+      {{ts[pg.livello][0]}}
+    </div>
+    </h5>
+  </div>
+  <div class="row">
+    <h5 class="col-auto">
+      riflessi :
+      <div class="mx-3">
+      {{ts[pg.livello][1]}}
+      </div>
+    </h5>
+  </div>
+  <div class="row">
+    <h5 class="col-auto">
+      volontà :
+      <div class="mx-3">
+      {{ts[pg.livello][2]}}
+      </div>
+    </h5>
+  </div>
+
+</div>
+
+  <div class="row container-extend ">
+    <h3 class="col my-3" style=" width: 8vw;">
+      lvl : {{pg.livello}}
+    </h3>
+
+  </div>
+
+
+
+
+
+
+
+
+<div class="container-fluid container-extend">
+
+  <img src="../../../assets/img/maga-elfica.jpg" class="img-thumbnail" alt="image pg">
+
+  <br>
+  <h5>statistiche</h5>
+  <div class="row">
+    <div class="col-auto  item-selec">
+      for : {{pg.forza}}
+    </div>
+    <div class="col-auto">
+      int: {{pg.intelligenza}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-auto">
+      des : {{pg.destrezza}}
+    </div>
+    <div class="col-auto">
+      sag: {{pg.sagezza}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-auto">
+      cos : {{pg.costituzione}}
+    </div>
+    <div class="col-auto">
+      car: {{pg.carisma}}
+    </div>
+  </div>
+
+</div>
+
+
+
+
+</div>
+
+<div class="container-fluid container-extend">
+  <div>
+  <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> spell book</button>
+
+
+  <button type="button" class=" btn btn-primary mx-3" routerLink="/talents">talenti</button>
+
+</div>
+    <div class="offcanvas offcanvas-start" style="width: 13vw;" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header" >
+
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Spells</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <ul>
+      <div class="row">
+        <h5 class="col-auto">lvl</h5>
+        <h5 class="col-auto">qty</h5>
+        -----------------
+      </div>
+      <div class="row">
+        <a  class="btn-sm  col-auto" routerLink="/wizard/spells/lvl/0" >LVL0</a>
+        <h5 class="col-auto" >{{spellsForDay[lvlPG][0]}} </h5>
+      </div>
+      <div class="row">
+        <a class="btn-sm  col-auto" routerLink="/wizard/spells/lvl/1">LVL1</a>
+        <h5 class="col-auto" >{{spellsForDay[lvlPG][1]}} </h5>
+      </div>
+      <div class="row">
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=3" routerLink="/wizard/spells/lvl/2">LVL2</a>
+        <h5 class="col-auto">{{spellsForDay[lvlPG][2]}} </h5>
+      </div>
+      <div class="row">
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=5" routerLink="/wizard/spells/lvl/3">LVL3</a>
+        <h5 class="col-auto">{{spellsForDay[lvlPG][3]}}</h5>
+      </div>
+      <div class="row">
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=7" routerLink="/wizard/spells/lvl/4">LVL4</a>
+        <h5 class="col-auto">{{spellsForDay[lvlPG][4]}}</h5>
+      </div>
+      <div class="row">
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=9" routerLink="/wizard/spells/lvl/5">LVL5</a>
+        <h5 class="col-auto">{{spellsForDay[lvlPG][5]}}</h5>
+      </div>
+      <div class="row">
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=11" routerLink="/wizard/spells/lvl/6">LVL6</a>
+        <h5 class="col-auto">{{spellsForDay[lvlPG][6]}}</h5>
+      </div>
+      <div class="row">
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=13" routerLink="/wizard/spells/lvl/7">LVL7</a>
+        <h5 class="col-auto">{{spellsForDay[lvlPG][7]}}</h5>
+      </div>
+      <div class="row">
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=15" routerLink="/wizard/spells/lvl/8">LVL8</a>
+        <h5 class="col-auto">{{spellsForDay[lvlPG][8]}}</h5>
+      </div>
+      <div class="row">
+        <a class="btn-sm  col-auto" *ngIf="lvlPG>=17" routerLink="/wizard/spells/lvl/9">LVL9</a>
+        <h5 class="col-auto">{{spellsForDay[lvlPG][9]}}</h5>
+      </div>
+    </ul>
+  </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!--
+  tabelle incantesimi
+-->
+<ng-template #spellPage class="tablePage">
+  <br>
+<div class="container-fluid space-between">
+  <h1> Incantesimi di livello {{lvlPage}}</h1>
+  <button class="btn btn-primary " routerLink="/wizard"> torna indietro</button>
+</div>
+  <div class="table-responsive">
+<br>
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th scope="col">magia</th>
+          <th scope="col">descrizione</th>
+          <th scope="col">scuola</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr *ngFor="let spell of spells ">
+          <td >{{spell.nome}}</td>
+          <td> {{spell.descrizione}}</td>
+          <td>{{spell.scuola}}</td>
+        </tr>
+
+      </tbody>
+      </table>
+    </div>
+
+
+
+
+</ng-template>

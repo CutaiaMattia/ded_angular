@@ -1,0 +1,33 @@
+*{
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.table>:not(caption)>*>* {
+padding: 0.3rem;
+}
+
+.fake-page{
+  width: 97vw;
+  display: flex;
+  margin: 20px;
+  background:rgb(3 169 244 / 14%);
+  align-items: center;
+  flex-direction: column;
+}
+
+.close-sym{
+  display: flex;
+  padding: 20px;
+  flex-direction: row-reverse;
+}
+.container-fluid{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+span{
+  color: aliceblue;
+}
+

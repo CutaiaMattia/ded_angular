@@ -1,0 +1,252 @@
+[
+  {
+    "nome": "Occulta oggetto",
+    "descrizione": "Maschera gli oggetti contro lo scrutamento",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Protezione dalle frecce",
+    "descrizione": "Il soggetto diventa immune a molti attacchi a distanza",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Resistere all'energia",
+    "descrizione": "Ignora 10 (o più) danni per ogni attacco da uno specifico tipo di energia",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Serratura arcana",
+    "descrizione": "Blocca magicamente una porta o uno scrigno",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Frastornare mostri",
+    "descrizione": "Una creatura vivente con 6 DV o meno perde l'azione successiva",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Risata incontenibile di Tasha",
+    "descrizione": "Il soggetto perde azioni per 1 round per livello",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Tocco di idiozia",
+    "descrizione": "Il soggetto subisce 1d6 danni a Int, Sag e Car",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Individuazione dei pensieri",
+    "descrizione": "Permette di ascoltare i pensieri superficiali",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Localizza oggetto",
+    "descrizione": "Percepisce la direzione in cui si trova un oggetto (uno specifico o un tipo)",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Vedere invisibilità",
+    "descrizione": "Rivela le creature o gli oggetti invisibili",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Evoca mostri II",
+    "descrizione": "Richiama una creatura extraplanare che combatte per l'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Evoca sciame",
+    "descrizione": "Evoca uno sciame di pipistrelli, topi o ragni",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Freccia acida di Melf",
+    "descrizione": "Un attacco di contatto a distanza ; 2d4 danni per 1 round + 1 round per ogni tre livelli",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Nube di nebbia",
+    "descrizione": "Un banco di nebbia ostacola la visuale",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Polvere luccicante",
+    "descrizione": "Acceca creature, delinea creature invisibili",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Ragnatela",
+    "descrizione": "Riempie una propagazione del raggio di 6 m con fili di ragnatela appiccicosi",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Bocca magica",
+    "descrizione": "Parla una volta che viene attivata",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Dissimulare",
+    "descrizione": "Distorce divinazioni su di una creatura o un oggetto",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Immagine minore",
+    "descrizione": "Come immagine silenziosa, ma emette suoni",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Immagine speculare",
+    "descrizione": "Crea duplicati illusori dell'incantatore (1d4 immagini +1 per ogni tre livelli, max 8)",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Invisibilità",
+    "descrizione": "Il soggetto è invisibile per 1 minuto per livello o finché non attacca",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Sfocatura",
+    "descrizione": "Gli attacchi mancano il soggetto il 20% delle volte",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Trama ipnotica",
+    "descrizione": "Affascina (2d4+livello) DV di creature",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Trappola di Leomune",
+    "descrizione": "Fa apparire un oggetto protetto da una trappola",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Fiamma perenne",
+    "descrizione": "Crea un torcia permanent e priva di calore",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Folata di vento",
+    "descrizione": "Spazza via o butta a terra le creature più piccole",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Frantumare",
+    "descrizione": "Le vibrazioni sonore danneggiano oggetti o creature cristalline",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Oscurità",
+    "descrizione": "Penombra soprannaturale nel raggio di 6 m",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Raggio rovente",
+    "descrizione": "Attacco di contatto a distanza che infligge 4d6 danni da fuoco, +1 raggio per ogni quattro livelli (max +3)",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Sfera infuocata",
+    "descrizione": "Una palla di fuoco che rotola, infligge 2d6 danni e dura 1 round per livello",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Cecità/Sordità",
+    "descrizione": "Rende il soggetto cieco o sordo",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Comandare non morti",
+    "descrizione": "Una creatura non morta obbedisce agli ordini dell'incantatore",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Mano spettrale",
+    "descrizione": "Crea una mano spettrale insostaniale che sferra attacchi di contatto",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Spaventare",
+    "descrizione": "Creature con meno di 6 DV cadono in preda al panico",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Tocco del ghoul",
+    "descrizione": "Paralizza un soggetto, che eman a un fetore che rende infermi quanti gli sono vicini",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Vita falsata",
+    "descrizione": "Si ottengono 1d10 pf temporanei + 1 per livello (max +10)",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Alterare se stesso",
+    "descrizione": "Permette di assumere la forma di una creatura simile",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Astuzia della volpe",
+    "descrizione": "Il soggetto ottiene +4 all'Int per 1 minuto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Forza del toro",
+    "descrizione": "Il soggetto ottiene +4 alla For per 1 minuto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Grazia del gatto",
+    "descrizione": "Il soggetto ottiene +4 alla Des per 1 minuto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Levitazione",
+    "descrizione": "Il soggetto si muove in alto e in basso per volontà dell'incantatore",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Movimenti del ragno",
+    "descrizione": "Conferisce la capacità di camminare sulle pareti e sui soffitti",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Pirotecnica",
+    "descrizione": "Trasforma i fuochi in luci accecanti o in fumo soffocante",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Resistenza dell'orso",
+    "descrizione": "Il soggetto_ottiene +4 all a Cos per 1 minuto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Saggezza del gufo",
+    "descrizione": "Il soggetto ottiene +4 alla Sag per 1 minuto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Scassinare",
+    "descrizione": "Apre porte chiuse a chiave o sigillate magicamente",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Scurovisione",
+    "descrizione": "Permette di vedere fino a 18 m nell'oscurità totale",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Splendore dell'aquila",
+    "descrizione": "Il soggetto ottiene +4 al Car per 1 minuto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Trucco della corda",
+    "descrizione": "Fino a otto creature possono nascondersi in uno spazio extradimensionale",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Vento sussurrante",
+    "descrizione": "Invia un breve messaggio a 1,5 km per livello",
+    "scuola": "Trasmutazione"
+  }
+]

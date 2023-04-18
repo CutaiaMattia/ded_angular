@@ -1,0 +1,202 @@
+[
+  {
+    "nome": "Ancora dimensionale",
+    "descrizione": "Impedisce il viaggio extra dimensionale",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Globo di invulnerabilità inferiore",
+    "descrizione": "Impedisce gli effetti di incantesimi dal 1° al 3° livello",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Pelle di pietra",
+    "descrizione": "Ignora 10 danni per ogni attacco",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Rimuovi maledizione",
+    "descrizione": "Libera un oggetto o una persona da una maledizione",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Trappola di fuoco'",
+    "descrizione": "Gli oggetti che vengono aperti infliggono 1d4 danni + 1 danno per livello",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Charme sui mostri",
+    "descrizione": "Convince un mostro che l'incantatore è un suo alleato",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Confusione",
+    "descrizione": "Rende bizzarro il comportamento del soggetto per 1 round per livello",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Costrizione inferiore",
+    "descrizione": "Comanda un soggetto con 7 DV o meno",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Disperazione opprimente",
+    "descrizione": "I soggetti subiscono -2 ai tiri per colpire, per i danni, ai tiri salvezza e alle prove",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Individuazione dello scrutamento",
+    "descrizione": "Avverte l' inntcantatore di chi lo spia magicamente",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Localizza creatura",
+    "descrizione": "Indica la direzione di una creatura familiare",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Occhio arcano",
+    "descrizione": "Un occhio fluttuante invisibile si muove a 9 m per round",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Scrutare'",
+    "descrizione": "Spia soggetti a distanza",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Creazione minore",
+    "descrizione": "Crea un oggetto di tessuto o di legno",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Evoca mostri IV",
+    "descrizione": "Richiama una creatura extraplanare che combatte per l'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Nebbia solida",
+    "descrizione": "Blocca la visuale e rallenta il movimento",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Porta dimensionale",
+    "descrizione": "Teletrasporta l'incantatore per una breve distanza",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Riparosicuro di Leomund",
+    "descrizione": "Crea un solido rifugio",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Tentacoli neri di Evard",
+    "descrizione": "Tentacoli lottano con quanti si trovano in una propagazione di 4,5 m",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Allucinazione mortale",
+    "descrizione": "Un'illusione spaventosa, uccide il soggetto o infligge 3d6 danni",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Invisibilità superiore",
+    "descrizione": "Come invisibilità ma il soggetto può attaccare e rimanere invisibile",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Muro illusorio",
+    "descrizione": "Un muro, un pavimento o un soffitto sembrano reali, ma vi si può passare attraverso",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Ombra di una evocazione",
+    "descrizione": "Simula evocazioni inferiori al 4' livello, ma reali solo al 20%",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Terreno illusorio",
+    "descrizione": "Fa apparire un tipo di terreno come un altro tipo (campi in foreste ecc .)",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Trama iridescente",
+    "descrizione": "Le luci affascinano 24 DV di creature",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Grido",
+    "descrizione": "Rende sordi i soggetti all'interno del cono e infligge 5d6 danni sonori",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Muro di fuoco",
+    "descrizione": "Infligge 2d4 danni da fuoco fino a 3 m e 1d4 fino a 6 m . Passare attraverso il muro infligge 2d6 danni +1 danno per livello",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Muro di ghiaccio",
+    "descrizione": "Piano di ghiaccio crea un muro con 15 pf + 1 pf per livello, o semisfera può intrappolare delle creature al suo interno",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Scudo di fuoco",
+    "descrizione": "Le creature che attaccano l'incantatore subiscono danni da fuoco; l'incantatore è protetto dal calore o dal freddo",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Sfera elastica di Otiluke",
+    "descrizione": "Un globo di forza protegge ma intrappola un soggetto",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Tempesta di ghiaccio",
+    "descrizione": "La grandine infligge 5d6 danni in un cilindro dell'ampiezza di 12 m",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Animare morti'",
+    "descrizione": "Crea scheletri e zombi non morti",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Contagio",
+    "descrizione": "Infetta il soggetto con la malattia scelta",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Debilitazione",
+    "descrizione": "Il soggetto ottiene 1d4 livelli negativi",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Paura",
+    "descrizione": "I soggetti all'interno del cono fuggono per 1round per livello",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Scagliare maledizione",
+    "descrizione": "-6 a un punteggio di caratteristica, -4 ai tiri per colpire, ai tiri salvezza e alle prove; o probabilità del 50% di perdere ogni azione",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Ingrandire persone di massa",
+    "descrizione": "Ingrandisce diverse creature",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Metamorfosi",
+    "descrizione": "Conferisce a un soggetto consenziente una nuova forma",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Potenziatore mnemonico di Rary'",
+    "descrizione": "Prepara incantesimi extra o ne recupera uno appena lanciato. Solo per i maghi",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Ridurre persone di massa",
+    "descrizione": "Riduce diverse creature",
+    "scuola": "Trasmutazione"
+  }
+]

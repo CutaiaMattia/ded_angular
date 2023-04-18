@@ -1,0 +1,29 @@
+.tablePage :not(h1){
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.table>:not(caption)>*>* {
+padding: 0.3rem;
+}
+
+.col-auto{
+  display: flex;
+  text-align: center;
+
+}
+
+h5{
+margin-top: .3rem;
+font-size: x-large;
+}
+
+.flex{
+  display: flex;
+}
+
+.space-between{
+  display: flex;
+  justify-content: space-between;
+}

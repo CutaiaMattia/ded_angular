@@ -1,0 +1,85 @@
+[
+  {
+    "competenza": "Competenza nelle armi e nelle armature",
+    "descrizione": [
+      "I maghi sono competenti nella balestra leggera, balestra pesante, bastone ferrato, pugnale e randello.",
+      "Non sono competenti in alcun tipo di armatura, né negli scudi.",
+      "Un'armatura di qualsiasi tipo interferisce con i movimenti del mago e può provocare il fallimento degli intesimi con componenti somatiche"
+    ]
+  },
+  {
+    "competenza": "Incantesimi",
+    "descrizione": [
+      "Un mago lancia gli incantesimi arcani.",
+      "Il mago deve scegliere e preparare i suoi incantesimi in anticipo (vedi sotto).",
+      "Per imparare, preparare o lanciare un incantesimo, un mago deve avere un punteggio di intelligenza almeno pari a 10 + il livello dell'incantesimo (int 10 per incantesimi di livello 0, Int 11 per incantesimi di primo livello, e così via).",
+      "La Classe Difficoltà per un tiro salvezza contro un incantesimo da mago è 10 + il livello dell'incantesimo + il modificatore di Intelligenza del mago.",
+      "I maghi possono conoscere qualsiasi numero di incantesimi.",
+      "Un mago deve preparare in precedenza gli incantesimi dormendo per una notte intera e impiegando 1 ora nello studio del suo libro degli incantesimi ."
+    ]
+  },
+  {
+    "competenza": "Linguaggi bonus",
+    "descrizione": [
+      "Un mago può sostituire il Draconico ad uno dei linguaggi bonus a disposizione del personaggio per la sua razza"
+    ]
+  },
+  {
+    "competenza": "Famiglio",
+    "descrizione": [
+      " Un mago può ottenere un famiglio "
+    ]
+  },
+  {
+    "competenza": "Scrivere pergamene",
+    "descrizione": [
+      "Un mago guadagna Scrivere Pergamene come talento bonus.",
+      "Questo talento gli permette di creare pergamene magiche"
+    ]
+  },
+  {
+    "competenza": "Talenti bonus",
+    "descrizione": [
+      "Al 5°, 10°, 15° e 20° livello un mago acquisisce un talento bonus.",
+      "Questo talento deve essere un talento di metamagia, un talento di creazione oggetto oppure Padronanza degli Incantesimi"
+    ]
+  },
+  {
+    "competenza": "Libro degli incantesimi",
+    "descrizione": [
+      "I maghi devono studiare i loro libri degli incantesimi ogni giorno per preparare gli incantesimi.",
+      "Un mago non può preparare incantesimi che non sono presenti sul suo libro, tranne lettura del magico che tutti i maghi possono preparare a memoria.",
+      "Un mago comincia con un libro degli incantesimi che contiene tutti gli incantesimi da mago di livello 0 (eccetto quelli dalla scuola o scuole proibite, se ne ha).",
+      "Ogni volta che il mago raggiunge un nuovo livello, guadagna 2 nuovi incantesimi di qualsiasi livello o livelli che è in grado di lanciare"
+    ]
+  },
+  {
+    "competenza": "Scuole di specializzazione",
+    "descrizione": [
+      "La specializzazione permette al mago di lanciare incantesimi extra dalla scuola scelta, tuttavia egli non imparerà mai a lanciare incantesimi da alcune altre scuole.",
+      "Ogni giorno il mago specialista può preparare un incantesimo addizionale (della scuola selezionata come specialità) per livello di incantesimo.",
+      "Lo specialista guadagna un bonus di +2 alle prove di Sapienza Magica per imparare gli incantesimi della scuola scelta.",
+      "In questo caso deve scegliere quali due scuole di magia rinunciare (a meno che non scelga di specializzarsi nella divinazione) che diverranno le sue scuole proibite e non può neanche lanciare questi incantesimi da pergamene o bacchette.",
+      "Le otto scuole di magia arcana sono abiurazione, ammaliamento, divinazione, evocazione, illusione, invocazione, necromanzia e trasmutazione.",
+      "Gli incantesimi che non rientrano in queste scuole sono chiamati incantesimi universali.",
+      "-Abiurazione :",
+      "Incantesimi che proteggono, bloccano o bandiscono. Uno specialista dell'abiurazione è chiamato abiuratore .",
+      "-Ammaliamento :",
+      "Incantesimi che infondono nel ricevente qualche qualità o garantiscono al mago il potere sudi un altro essere. Uno specialista dell'ammaliamento è chiamato ammaliatore.",
+      "-Divinazione:",
+      "Incantesimi che rivelano informazioni . Uno specialista della divinazione è chiamato divinatore. A differenza degli altri specialisti un divinatore deve rinunciare a una sola scuola.",
+      "-Evocazione :",
+      "Incantesimi che portano creature o materiali all'incantatore . Uno specialista dell'evocazione è chiamato evocatore.",
+      "-Illusione :",
+      "Incantesimi che alterano la percezione o creano immagini false. Uno specialista dell'illusione è chiamato illusionista.",
+      "-Invocazione :",
+      "Incantesimi che manipolano l'energia o creano qualcosa dal nulla. Uno specialista dell'invocazione è chiamato invocatore.",
+      "-Necromanzia:",
+      "Incantesimi che manipolano, creano o distruggono la vita o la forza vitale . Uno specialista della necromanzia è chiamato necromante.",
+      "-Trasmutazione:",
+      "Incantesimi che trasformano fisicamente il ricevente o cambiano le sue caratteristiche in modo più sofisticato. Uno specialista della trasmutazione è chiamato trasmutatore.",
+      "-Universale:",
+      "Non una scuola ma una categoria di incantesimi che tutti i maghi possono imparare; un mago non può selezionare questa scuola come scuola di specializzazione o come scuola a cui non ha accesso. Solo un piccolo numero di incantesimi ricade in questa categoria ."
+    ]
+  }
+]

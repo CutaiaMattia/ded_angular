@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+<div class=" fake-page">
+  <div class="container-fluid">
+    <button routerLink= {{link}}    class="btn btn-primary close-sym"><span >x</span></button>
+  </div>
+
+<div class="table-responsive">
+<br><br>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th scope="col">Talento</th>
+      <th scope="col">Prerequisito</th>
+      <th scope="col">beneficio</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr *ngFor="let talento of talents ">
+      <td >{{talento.titolo}}</td>
+
+      <td >
+        <div *ngFor="let singleStringPrereq of talento.prerequisito">
+          <p>{{singleStringPrereq}}</p>
+        </div>
+
+      </td>
+      <td>{{talento.beneficio}}</td>
+    </tr>
+
+  </tbody>
+  </table>
+</div>
+</div>
+

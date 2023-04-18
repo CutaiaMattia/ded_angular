@@ -1,0 +1,217 @@
+[
+  {
+    "nome": "Congedo",
+    "descrizione": "Costringe una creatura a tornare al suo piano natio",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Santuario privato di Mordenkainen",
+    "descrizione": "Impedisce a chiunque di vedere o scrutare in un'area per 24 ore",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Spezzare incantamento",
+    "descrizione": "Libera i soggetti da ammaliamenti, alterazioni, maledizioni e pietrificazioni",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Blocca mostri",
+    "descrizione": "Come blocca persone, ma su qualsiasi creatura",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Dominare persone",
+    "descrizione": "Controlla un umanoidibtelepaticamente",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Nebbia mentale",
+    "descrizione": "I soggetti nella nebbia subiscono -10 a Sag e alle prove di Volontà",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Regressione mentale",
+    "descrizione": "Int e Car del soggetto scendono a 1",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Simbolo di sonno",
+    "descrizione": "Runa che fa cadere le creature vicine in un sonno catatonico",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Contattare altri piani",
+    "descrizione": "Pone una domanda a un'entità extraplanare",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Legame telepatico di Rary",
+    "descrizione": "Il collegamento permette agli alleati di comunicare",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Occhi indagatori",
+    "descrizione": "1d4 +t per livello occhi fluttuanti che esplorano per l'incantator",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Creazione maggiore",
+    "descrizione": "Come creazione minore, ma anche di pietra e di metallo",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Evoca mostri V",
+    "descrizione": "Richiama una creatura extraplanare che combatte per l'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Legame planare inferiore",
+    "descrizione": "Intrappola una creatura extraplanare con 6 DV o meno finché non esegue un compito",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Muro di pietra",
+    "descrizione": "Crea un muro di pietra che può essere plasmato",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Nube mortale",
+    "descrizione": "Uccide creature con 3 DV o meno; 4-6 DV tiro salvezza o muoiono, più di 6 DV subiscono danni alla Cos",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Scrigno segreto di LeomundF",
+    "descrizione": "Nasconde un o scrigno prezioso sul Piano Etereo ; l'incantatore può recuperarlo a suo piacimento",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Segugio fedele di Mordenkainen",
+    "descrizione": "Un cane fantomatico che può fare la guardia o attaccare",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Teletrasporto",
+    "descrizione": "Trasporta istantaneamente 1'incantatore a una distanza di t 50 km per livell",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Immagine persistente",
+    "descrizione": "Come immagine maggiore, ma non è necessaria la concentrazione",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Incubo",
+    "descrizione": "Invia una visione che provoca 1d10 danni e affaticamento",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Miraggio arcano",
+    "descrizione": "Come terreno illusorio, con in più le strutture",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Ombra di una invocazione",
+    "descrizione": "Simula invocazion inferiori al 5° livello, ma reali solo al 20%",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Sembrare",
+    "descrizione": "Cambia l'aspetto di una persona per ogni due livelliSogno: Invia un messaggio a qualcuno che sta dormendo",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Visione falsa",
+    "descrizione": "Inganna lo scrutamento con un'illusion",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Cono di freddo",
+    "descrizione": "1d6 danni da freddo per livello",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Inviare",
+    "descrizione": "Riferisce un breve messaggio ovunque istantaneamente",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Mano interposta di Bigby",
+    "descrizione": "Una mano che fornisce copertura contro un avversario",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Muro di forza",
+    "descrizione": "Un muro immune ai danni",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Giara magica'",
+    "descrizione": "Consente la possessione di un'altra creatura",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Inaridire",
+    "descrizione": "Fa appassire un vegetale o infligge 1d6 danni per livello a una creatura vegetale",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Onde di affaticamento",
+    "descrizione": "Parecchi bersagli diventano affaticati",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Simbolo di dolore",
+    "descrizione": "Runa che devasta le creature vicine con dolori indicibili",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Crescita animale",
+    "descrizione": "Un animale per ogni due livelli raddoppia le dimensioni",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Fabbricare",
+    "descrizione": "Trasforma materie prime in oggetti rifiniti",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Metamorfosi funesta",
+    "descrizione": "Trasforma il soggetto in un animale innocuo",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Passapareti",
+    "descrizione": "Crea un passaggio attraverso pareti di legno e pietra",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Scolpire pietra",
+    "descrizione": "Plasma la pietra in qualsiasi forma",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Telecinesi",
+    "descrizione": "Sposta un oggetto, attacca una creatura o lancia un oggetto o una creatura",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Trasmutare fango in roccia",
+    "descrizione": "Trasforma due cubi con spigolo di 3 m per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Trasmutare roccia in fango",
+    "descrizione": "Trasforma due cubi con spigolo di 3 tn per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Volo giornaliero",
+    "descrizione": "L'incantatore vola con una velocità di 12 m e può andare veloce nelle lunghe distanze",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Permanenza'",
+    "descrizione": "Rende alcuni incantesimi permanenti",
+    "scuola": "Universale"
+  }
+]

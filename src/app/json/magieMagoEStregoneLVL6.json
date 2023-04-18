@@ -1,0 +1,217 @@
+[
+  {
+    "nome": "Campo anti-magia",
+    "descrizione": "Nega la magia nel raggio di 3 m",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Dissolvi magie superiore",
+    "descrizione": "Come dissolvi magie ma fino a +20 alla prova",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Globo di invulnerabilità",
+    "descrizione": "Come globo di invulnerabilità inferiore, più effetti di incantesimi di 4° livello",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Repulsione",
+    "descrizione": "Le creature non possono avvicinarsi all'incantatore",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Vigilanza e interdizione",
+    "descrizione": "Una serie di difese magiche per proteggere un'area",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Costrizione/Cerca",
+    "descrizione": "Come costrizione inferiore ma influenza qualsiasi creatura",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Eroismo superiore",
+    "descrizione": "Fornisce un bonus di +4 ai tiri per colpire, ai tiri salvezza, alle prove di abilità ; immunità alla paura ; pf temporanei",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Simbolo di persuasione",
+    "descrizione": "Runa che rende le creature vicine soggette a charme",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Suggestione di massa",
+    "descrizione": "Come suggestione, più un soggetto per livello",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Analizzare dweomer'",
+    "descrizione": "Rivela gli aspetti magici di un soggetto",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Conoscenza delle leggende",
+    "descrizione": "L'incantatore apprende storie su una persona, un luogo o un oggetto",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Visione del vero'",
+    "descrizione": "Permette di vedere tutte le cose per quello che sono veramente",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Evoca mostri VI",
+    "descrizione": "Richiama una creatura extraplanare che combatte per l'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Legame planare",
+    "descrizione": "Come legame planare inferiore ma fino a 12 DV",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Muro di ferro",
+    "descrizione": "30 pf per ogni quattro livelli ; può cadere addosso ai nemici",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Nebbia acida",
+    "descrizione": "Nebbia che infligge danni da acido",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Camminare nelle ombre",
+    "descrizione": "Permette di entrare nell'ombra per viaggiare rapidamente",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Fuorviare",
+    "descrizione": "Rende l'incantatore invisibile e crea un suo sosia illusorio",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Immagine permanente'",
+    "descrizione": "Include vista, suono e odore",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Immagine programmata'",
+    "descrizione": "Come immagine maggiore, ma attivata da un evento",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Velo",
+    "descrizione": "Cambia l'aspetto di un gruppo di creature",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Catena di fulmini",
+    "descrizione": "1d6 danni per livello; 1 fulmine secondario per livello di cui ognuno infligge danni dimezzati",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Contingenza",
+    "descrizione": "Fa scattare le condizioni per l'attivazione di un altro incantesimo",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Mano possente di Bigby",
+    "descrizione": "Una mano che spinge via le creature",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Sfera congelante di Otiluke",
+    "descrizione": "Congela l'acqua o infligge danni da freddo",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Cerchio di morte",
+    "descrizione": "Uccide 1d4 DV di creature per livello",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Creare non morti",
+    "descrizione": "Per creare ghoul, ghast, mummie o mohrg",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Non morto a morto",
+    "descrizione": "Distrugge 1d4 DV per livello di non morti (max 20d4)",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Sguardo penetrante",
+    "descrizione": "Il bersaglio diventa in preda al panico, infermo e in stato comatoso",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Simbolo di paura",
+    "descrizione": "Rama che fa cadere le creatur e vicine in preda al panico",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Astuzia della volpe di massa",
+    "descrizione": "Come astuzia della volpe, ma influenza un soggetto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Carne in pietra",
+    "descrizione": "Trasforma una creatura in una statua",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Controllare acqua",
+    "descrizione": "Solleva o abbassa masse d'acqua",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Disintegrazione",
+    "descrizione": "Fa svanire una creatura o un oggetto",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Elucubrazione di Mordenkainen",
+    "descrizione": "Fa ricordare incantesimi di 5° livello o inferiori . Solo per i maghi",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Forza del toro di massa",
+    "descrizione": "Come forza del toro, ma influenza un soggetto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Grazia del gatto di massa",
+    "descrizione": "Come grazia del gatto, ma influenza un soggetto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Muovere il terreno",
+    "descrizione": "Scava trincee e fa crescere colline",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Pietra in carne",
+    "descrizione": "Ristabilisce una creatura pietrificata",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Resistenza dell'orso di massa",
+    "descrizione": "Come resistenza dell'orso, ma influenza un soggetto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Saggezza del gufo di massa",
+    "descrizione": "Come saggezza del gufo, ma influenza un soggetto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Splendore dell'aquila di massa",
+    "descrizione": "Come splendore dell'aquila, ma influenza un soggetto per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Trasformazione diTenser",
+    "descrizione": "Lincantatore ottiene bonus di combattimento",
+    "scuola": "Trasmutazione"
+  }
+]

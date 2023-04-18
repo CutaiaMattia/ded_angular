@@ -1,0 +1,415 @@
+[
+  {
+    "titolo": "Abilità Focalizzata",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +3 alle prove dell'abilità prescelta"
+  },
+  {
+    "titolo": "Acrobatico",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +2 alle prove di Acrobazia e Saltare"
+  },
+  {
+    "titolo": "Affinità Animale",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +2 alle prove di Addestrare Animali e Cavalcare"
+  },
+  {
+    "titolo": "Agile",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +2 alle prove di Artista della Fuga e Equilibrio"
+  },
+  {
+    "titolo": "Allerta",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +2 alle prove di Ascoltare e Osservare"
+  },
+  {
+    "titolo": "Arma Accurata",
+    "prerequisito": [
+      "Competenza nell'arma, bonus di attacco base +1"
+    ],
+    "beneficio": "Utilizza il modificatore di Des invece di quello di For ai tiri per colpire con le armi leggere"
+  },
+  {
+    "titolo": "Arma Focalizzata",
+    "prerequisito": [
+      "Competenza nell'arma prescelta",
+      " bonus di attacco base + 1"
+    ],
+    "beneficio": "Bonus di +1 ai tiri per colpire con l'arma prescelta"
+  },
+  {
+    "titolo": "Arma Specializzata",
+    "prerequisito": [
+      "Competenza nell'arma prescelta",
+      "Arma Focalizzata nell'arma prescelta",
+      " guerriero di 4° livello"
+    ],
+    "beneficio": "Bonus di +2 ai danni con l'arma prescelta"
+  },
+  {
+    "titolo": "Arma Focalizzata Superiore",
+    "prerequisito": [
+      "Competenza nell'arma prescelta",
+      "Arma Focalizzata nell'arma prescelta",
+      " guerriero di 8° livello"
+    ],
+    "beneficio": "Bonus di +2 ai tiri per colpire con l'arma prescelta"
+  },
+  {
+    "titolo": "Arma Specializzata Superiore",
+    "prerequisito": [
+      "Competenza nell'arma prescelta",
+      "Arma Focalizzata nell'arma prescelta",
+      "Arma Focalizzata Superiore nell'arma prescelta",
+      " Arma Specializzata nell'arma prescelta",
+      " guerriero di 12° livello"
+    ],
+    "beneficio": "Bonus di +4 ai danni con l'arma prescelta"
+  },
+  {
+    "titolo": "Atletico",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +2 alle prove di Nuotare e Scalare"
+  },
+  {
+    "titolo": "Attacco Poderoso",
+    "prerequisito": [
+      "For 13"
+    ],
+    "beneficio": "Scambia il bonus all'attacco con i danni (fino al bonus di attacco base )"
+  },
+  {
+    "titolo": "Incalzare",
+    "prerequisito": [
+      "For 13",
+      " Attacco Poderoso"
+    ],
+    "beneficio": " Un attacco in mischia extra per un avversario abbattuto"
+  },
+  {
+    "titolo": "Incalzare Potenziato",
+    "prerequisito": [
+      "For 13",
+      "Attacco Poderoso",
+      "Incalzare",
+      "bonus di attacco base +4"
+    ],
+    "beneficio": "Nessun limite agli attacchi di incalzare per ogni round"
+  },
+  {
+    "titolo": "Oltrepassare Migliorato",
+    "prerequisito": [
+      "For 13",
+      " Attacco Poderoso"
+    ],
+    "beneficio": "Bonus di +4 ai tentativi di buttare a terra"
+  },
+  {
+    "titolo": "Spezzare Migliorato",
+    "prerequisito": [
+      "For 13",
+      " Attacco Poderoso"
+    ],
+    "beneficio": "Bonus di +4 ai tentativi di colpire un oggetto ; nessun attacco di opportunità"
+  },
+  {
+    "titolo": "Spingere Migliorato",
+    "prerequisito": [
+      "For 13",
+      " Attacco Poderoso"
+    ],
+    "beneficio": "Bonus di +4 ai tentativi di spingere; nessun attacc o di opportunità"
+  },
+  {
+    "titolo": "Aumentare Evocazione",
+    "prerequisito": [
+      "Incantesimi Focalizzati (evocazione)"
+    ],
+    "beneficio": "Le creature evocate ottengono +4 For, +4 Cos"
+  },
+  {
+    "titolo": "Autorità",
+    "prerequisito": [
+      "Personaggio di 6° livello"
+    ],
+    "beneficio": "Chiama a raccolta gregari e seguaci"
+  },
+  {
+    "titolo": "Autosufficiente",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +2 alle prove di Guarire e Sopravvivenza"
+  },
+  {
+    "titolo": "Colpo Senz'Armi Migliorato",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "È considerato armato anche senz'armi"
+  },
+  {
+    "titolo": "Deviare Frecce",
+    "prerequisito": [
+      "Des 13",
+      "Colpo Senz'Armi Migliorato"
+    ],
+    "beneficio": "Devia un attacco a distanza al round"
+  },
+  {
+    "titolo": "Afferrare Frecce",
+    "prerequisito": [
+      "Des 15",
+      "Colpo Senz'Armi Migliorato",
+      "Deviare Frecce"
+    ],
+    "beneficio": "Afferra un attacco a distanza deviato"
+  },
+  {
+    "titolo": "Lottare Migliorato",
+    "prerequisito": [
+      "Des 13",
+      "Colpo Senz'Armi Migliorato"
+    ],
+    "beneficio": "Bonus di +4 alle prove di lottare; nessun attacco di opportunità"
+  },
+  {
+    "titolo": "Pugno Stordente",
+    "prerequisito": [
+      "Des 13",
+      "Sag 13",
+      "Colpo Senz'Armi Migliorato",
+      "bonus di attacco base +8"
+    ],
+    "beneficio": "Stordisce l'avversario con un attacco senz'armi"
+  },
+  {
+    "titolo": "Combattere alla Cieca",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Ripete il tiro percentuale fallito contro l'occultamento"
+  },
+  {
+    "titolo": "Combattere con Due Armi",
+    "prerequisito": [
+      "Des 15"
+    ],
+    "beneficio": "Riduce di 2 le penalità per combattere con due armi"
+  },
+  {
+    "titolo": "Combattere con Due Armi Migliorato",
+    "prerequisito": [
+      "Des 17",
+      "Combattere con Due Armi ",
+      "bonus di attacco base +6"
+    ],
+    "beneficio": "Ottiene un secondo attacco con la mano secondaria"
+  },
+  {
+    "titolo": "Combattere con Due Armi Superiore",
+    "prerequisito": [
+      "Des 19",
+      "Combattere con Due Armi",
+      "Combattere con Due Armi Migliorato",
+      "bonus di attacco base +11"
+    ],
+    "beneficio": "Ottiene un terzo attacco con la mano secondaria"
+  },
+  {
+    "titolo": "Difendere con Due Armi",
+    "prerequisito": [
+      "Des 15",
+      "Combattere con Due Armi"
+    ],
+    "beneficio": "La mano secondaria conferisce un bonus di scudo +1 alla CA"
+  },
+  {
+    "titolo": "Combattere in Sella",
+    "prerequisito": [
+      "Cavalcare 1 grado"
+    ],
+    "beneficio": "Nega gli attacchi alla cavalcatura con una prova di Cavalcare"
+  },
+  {
+    "titolo": "Attacco in Sella",
+    "prerequisito": [
+      "Cavalcare 1 grado",
+      "Combattere in Sella"
+    ],
+    "beneficio": "Si muove prima e dopo una carica in sella"
+  },
+  {
+    "titolo": "Carica Devastante",
+    "prerequisito": [
+      "Cavalcare 1 grado",
+      "Attacco in Sella",
+      "Combattere in Sella"
+    ],
+    "beneficio": "Raddoppia i danni con una carica in sella"
+  },
+  {
+    "titolo": "Tirare in Sella",
+    "prerequisito": [
+      "Cavalcare 1 grado",
+      "Combattere in Sella"
+    ],
+    "beneficio": "Dimezza le penalità per gli attacchi a distanza in sella"
+  },
+  {
+    "titolo": "Travolgere",
+    "prerequisito": [
+      "Cavalcare 1 grado",
+      "Combattere in Sella"
+    ],
+    "beneficio": "L'avversario viene travolto dal personaggio in sella"
+  },
+  {
+    "titolo": "Competenza nelle Armature (leggere)",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Nessuna penalità di armatura alla prova ai tiri per colpire"
+  },
+  {
+    "titolo": "Competenza nelle Armature (medie)",
+    "prerequisito": [
+      "Competenza nelle Armature (leggere )"
+    ],
+    "beneficio": "Nessuna penalità di armatura alla prova ai tiri per colpire"
+  },
+  {
+    "titolo": "Competenza nelle Armature (pesanti)",
+    "prerequisito": [
+      "Competenza nelle Armature (medie )"
+    ],
+    "beneficio": "Nessuna penalità di armatura alla prova ai tiri per colpire"
+  },
+  {
+    "titolo": "Competenza nelle Armi Esotiche",
+    "prerequisito": [
+      "Bonus di attacco base + 1"
+    ],
+    "beneficio": "Nessuna penalità agli attacchi con un'arma esotica"
+  },
+  {
+    "titolo": "Competenza nelle Armi da Guerra ",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Nessuna penalità agli attacchi con un'arma da guerra"
+  },
+  {
+    "titolo": "Competenza nelle Armi Semplici",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Nega la penalità di -4 agli attacchi con un'arma semplice"
+  },
+  {
+    "titolo": "Competenza negli Scudi",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Nessuna penalità di armatura alla prova al tiro per colpire"
+  },
+  {
+    "titolo": "Attacco con lo Scudo Migliorato",
+    "prerequisito": [
+      "Competenza negli Scudi"
+    ],
+    "beneficio": "Mantiene il bonus alla CA quando colpisce con lo scudo"
+  },
+  {
+    "titolo": "Competenza negli Scudi Torre ",
+    "prerequisito": [
+      "Competenza negli Scudi"
+    ],
+    "beneficio": "Nessuna penalità di armatura alla prova al tiro per colpire"
+  },
+  {
+    "titolo": "Controincantesimo Migliorato",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Contrasta incantesimo con un incantesimo della stessa scuola"
+  },
+  {
+    "titolo": "Correre",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Corre 5 volte più veloce della velocità normale , bonus di +4 alle prove di Saltare dopo una rincorsa"
+  },
+  {
+    "titolo": "Critico Migliorato",
+    "prerequisito": [
+      "Competenza nell'arma",
+      "bonus di attacco base + 8"
+    ],
+    "beneficio": "Raddoppia l'intervallo di minaccia dell'arma"
+  },
+  {
+    "titolo": "Diligente",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +2 alle prove di Decifrare Scritture e Valutare"
+  },
+  {
+    "titolo": "Dita Sottili",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +2 alle prove di Disattivare Congegni e Scassinare Serrature"
+  },
+  {
+    "titolo": "Escludere Materiali",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Lancia incantesimi senza le componenti materiali"
+  },
+  {
+    "titolo": "Estrazione Rapida",
+    "prerequisito": [
+      "Bonus di attacco base +1"
+    ],
+    "beneficio": "Estrae un'arma come azione gratuita"
+  },
+  {
+    "titolo": "Furtivo",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +2 alle prove di Muoversi Silenziosamente e Nascondersi"
+  },
+  {
+    "titolo": "Incantare in Combattimento",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +4 alle prove di Concentrazione per lanciare incantesimi sulla difensiva"
+  },
+  {
+    "titolo": "Incantesimi Focalizzati",
+    "prerequisito": [
+      "-"
+    ],
+    "beneficio": "Bonus di +1 alla CD di tutti i tiri salvezza contro la scuola di magia prescelta"
+  }
+]

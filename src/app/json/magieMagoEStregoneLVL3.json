@@ -1,0 +1,207 @@
+[
+  {
+    "nome": "Anti-individuazione",
+    "descrizione": "Nasconde il soggetto a divinazione e scrutamento",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Cerchio magico contro il bene/caos/legge/male",
+    "descrizione": "Come gli incantesimi protezione, ma ha un raggio di 3 m e una durata di 10 minuti per livello",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Dissolvi magie",
+    "descrizione": "Cancella incantesimi ed effetti magici",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Protezione dall'energia",
+    "descrizione": "Assorbe 12 danni per livello da un tipo di energia",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Rune esplosive",
+    "descrizione": "Infliggono 6d6 danni quando vengono lette",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Blocca persone",
+    "descrizione": "Paralizza un umanoide per 1 round per livello",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Eroismo",
+    "descrizione": "Fornisce +2 ai tiri per colpire, ai tiri salvezza, alle prove di abilità",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Ira",
+    "descrizione": "Fornisce +2 a For e Cos, +1 ai tiri salvezza sulla Volontà, -2 alla CA",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Sonno profondo",
+    "descrizione": "Fa cadere nel sonno 10 DV di creature",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Suggestione",
+    "descrizione": "Spinge il soggetto a intraprendere l'azione suggerita",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Chiaroudienza/Chiaroveggenza",
+    "descrizione": "Eincantatore vede o sente a distanza per 1 minuto per livello",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Linguaggi",
+    "descrizione": "Permette di parlare qualsiasi linguaggio",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Vista arcana",
+    "descrizione": "L'incantatore riesce a vedere le aure magiche",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Destriero fantomatico",
+    "descrizione": "Un cavallo magico appare per 1 ora per livello",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Nube maleodorante",
+    "descrizione": "Vapori nauseanti per 1 round per livello",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Sigillo del serpente",
+    "descrizione": "Crea simboli di testo che immobilizzano il lettore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Tempesta di nevischio",
+    "descrizione": "Ostacola la visione e il movimento",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Distorsione",
+    "descrizione": "Gli attacchi mancano il soggetto il 50% delle volte",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Immagine maggiore",
+    "descrizione": "Come immagine silenziosa ma emette suoni, odore e calore",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Scritto illusorio'",
+    "descrizione": "Solo il lettore designato è in grado di leggerlo",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Sfera di invisibilità",
+    "descrizione": "Rende invisibili coloro che si trovano nel raggio 3 m",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Capanna di Leomund",
+    "descrizione": "Crea riparo per 10 creature",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Fulmine",
+    "descrizione": "1d6 danni per livello da elettricità",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Luce diurna",
+    "descrizione": "Luce intensa nel raggio di 18 m",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Muro di vento",
+    "descrizione": "Respinge frecce, piccole creature ei gas",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Palla di fuoco",
+    "descrizione": "1d6 danni per livello nel raggio d 4 m",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Fermare non morti",
+    "descrizione": "Immobilizza i non morti per 1 round per livello",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Raggio di esaurimento",
+    "descrizione": "Raggio che rende il soggetto esausto",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Riposo inviolato",
+    "descrizione": "Conserva un cadavere",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Tocco del vampiro",
+    "descrizione": "Attacco di contatto che infligge 1d6 danni per ogni due livelli; l'incantatore guadagna i danni come p",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Arma magica superiore",
+    "descrizione": "+1 per ogni quattro livelli (max +5)",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Estremità affilata",
+    "descrizione": "Raddoppia l'intervallo di minaccia di un'arma normale",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Forma gassosa",
+    "descrizione": "Il soggetto diventa insostanziale e può volare lentamente",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Freccia infuocata",
+    "descrizione": "Frecce che infliggono +1d6 danni da fuoco",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Intermittenza",
+    "descrizione": "E incantatore scompare e riappare a caso per 1 round per livello",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Lentezza",
+    "descrizione": "Un soggetto per livello compie solo un'azione per round, ha -1 alla CA e ai tiri per colpire",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Pagina segreta",
+    "descrizione": "Cambia l'aspetto di una pagina per nasconderne il reale contenuto",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Respirare sott'acqua",
+    "descrizione": "Il soggetto può respirare sott'acqua",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Restringere oggetto",
+    "descrizione": "L'oggetto si riduce a un sedicesimo della sua taglia",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Velocità",
+    "descrizione": "Una creatura per livello si muove più veloce, +1 ai tiri per colpire, alla CA e ai tiri salvezza sui Riflessi",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Volare",
+    "descrizione": "Il soggetto vola con una velocità di 18 m",
+    "scuola": "Trasmutazione"
+  }
+]

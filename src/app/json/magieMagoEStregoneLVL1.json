@@ -1,0 +1,197 @@
+[
+  {
+    "nome": "Allarme",
+    "descrizione": "Sorveglia un'area per 2 ore per livello",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Blocca porte",
+    "descrizione": "Tiene una porta chiusa",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Contrastare elementi",
+    "descrizione": "A proprio agio in un ambiente freddo o caldo",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Protezione dal bene/caos/legge/male",
+    "descrizione": "+2 alla CA e ai tiri salvezza ; contrasta controlli mentali e allontana elementali ed esterni",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Scudo",
+    "descrizione": "Un disco invisibile fornisce +4 alla CA e blocca dardi incantati",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Charme su persone",
+    "descrizione": "Rende una persona amichevole",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Ipnosi",
+    "descrizione": "Affascina 2d4 DV di creature",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Sonno",
+    "descrizione": "Fa cadere 4 DV di creature in un sonno magico",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Colpo accurato",
+    "descrizione": "+20 al successivo tiro per colpire dell'incantatore",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Comprensione dei linguaggi",
+    "descrizione": "L'incantatore comprende tutti i linguaggi scritti e parlati",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Identificare",
+    "descrizione": "Determina le proprietà di un oggetto magico",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Individuazione dei non morti",
+    "descrizione": "Rivela non morti nel raggio di 18 m",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Individuazione delle porte segrete",
+    "descrizione": "Rivela porte nascoste entro 18 m",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Armatura magica",
+    "descrizione": "Fornisce al soggetto un bonus di armatura +4",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Cavalcatura",
+    "descrizione": "Evoca un cavallo da galoppo per 2 ore per livello",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Evoca mostri I",
+    "descrizione": "Richiama una creatura extraplanare che combatte per l'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Foschia occultante",
+    "descrizione": "La nebbia avvolge l'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Servitore inosservato",
+    "descrizione": "Forza invisibile che esegue i comandi dell'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Unto",
+    "descrizione": "Rende scivoloso un quadrato con lato di 3m o un oggetto",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Aura magica di Nystul",
+    "descrizione": "Altera l'aura magica di un oggetto",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Camuffare se stesso",
+    "descrizione": "Modifica l'aspetto dell'incantatore",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Immagine silenziosa",
+    "descrizione": "Crea illusioni minori ideate dall'incantatore",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Spruzzo colorato",
+    "descrizione": "Rende privi di sensi, acceca e/o stordisce 1d6 creature deboli",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Ventriloquio",
+    "descrizione": "La voce risuona lontana per 1 minuto per livello",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Dardo incantato",
+    "descrizione": "1d4+1 danni ; +1 dardo per ogni due livelli oltre il primo (max 5)",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Disco fluttuante di Tenser",
+    "descrizione": "Crea un disco orizzontale del diametro di 90 cm che porta fino a 50 kg per livello",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Mani brucianti",
+    "descrizione": "1d4 danni da fuoco per livello (max 5d4)",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Stretta folgorante",
+    "descrizione": "A contatto infligge 1d6 danni da elettricità per livello (max 5d6)",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Incuti paura",
+    "descrizione": "Una creatura con 5 DV o meno diviene impaurita",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Raggio di indebolimento",
+    "descrizione": "Raggio che infligge 1d6 +1 danni alla For per ogni due livelli",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Tocco gelido",
+    "descrizione": "l tocco per livello infligge 1d6 danni e la possibilità di 1 danno alla For",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Animare corde",
+    "descrizione": "Permette a una corda di muoversi a comando dell'incantatore",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Arma magica",
+    "descrizione": "L'arma ottiene un bonus di +1",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Caduta morbida",
+    "descrizione": "Oggetti o creature cadono lentamente",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Cancellare",
+    "descrizione": "Scritte normali o magiche svaniscono.",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Ingrandire persone",
+    "descrizione": "Una creatura umanoide raddoppia le sue dimensioni",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Ridurre persone",
+    "descrizione": "Una creatura umanoide dimezza le sue dimensioni",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Ritirata rapida",
+    "descrizione": "La velocità dell'incantator e aumenta di 9 m",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Saltare",
+    "descrizione": "Il soggetto ottiene un bonus alle prove di saltare",
+    "scuola": "Trasmutazione"
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "nome": "Muro prismatico",
+    "descrizione": "I colori del muro hanno una serie di effetti",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Protezione dagli incantesimi",
+    "descrizione": "Conferisce un bonus di resistenza +8",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Serratura dimensionale",
+    "descrizione": "Teletrasporto e viaggi interplanari bloccati per 1 giorno per livello",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Vuoto mentale",
+    "descrizione": "Il soggetto è immune alle magie mentali/emozionali e allo scrutamento",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Antipatia",
+    "descrizione": "!:oggetto o la locazione influenzata respingono certe creature",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Charme sui mostri di massa",
+    "descrizione": "Come charme sui mostri, ma ha effetto sui presenti entro 9 m",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Danza irresistibile di Otto",
+    "descrizione": "Costringe il soggetto a danzare",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Esigere",
+    "descrizione": "Come inviare, ma è anche possibile inviare una suggestione",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Legame",
+    "descrizione": "Una serie di tecniche per imprigionare una creatura",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Parola del potere, stordire",
+    "descrizione": "Stordisce una creatura con 150 pf o meno",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Simbolo di demenza",
+    "descrizione": "Runa che rende dementi le creature vicine",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Simpatia",
+    "descrizione": "L'oggetto o la locazione influenzata attraggono certe creature",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Momento di prescienza",
+    "descrizione": "I:incantatore ottiene un bonus cognitivo su un singolo tiro per colpire, prova o tiro salvezza",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Occhi indagatori superiore",
+    "descrizione": "Come occhi indagatori, ma gli occhi hanno visione del vero",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Rivela locazioni",
+    "descrizione": "Locazione esatta di una creatura o di un oggetto",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Evoca mostri VIII",
+    "descrizione": "Richiama una creatura extraplanare che combatte per l'incantatore",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Intrappolare l'anima",
+    "descrizione": "Imprigiona il soggetto all'interno di una gemma",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Labirinto",
+    "descrizione": "Intrappola il soggetto in un labirinto extradimensionale",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Legame planare superiore",
+    "descrizione": "Come legame planare inferiore ma fino a 18 DV",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Nube incendiaria",
+    "descrizione": "Una nuvola che infligge 4d6 danni da fuoco per round",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Ombra di una invocazione superiore",
+    "descrizione": "Come ombra di una invocazione, ma fino al 7° livello e reali al 60%",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Schermo",
+    "descrizione": "Un'illusione che nasconde un'area da visione e scartamento",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Trama scintillante",
+    "descrizione": "Colori contorti che stordiscono, rendono confusi o privi di sensi",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Esplosione solare",
+    "descrizione": "Acceca tutti nel raggio di 24 m, infligge 6d6 danni",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Grido superiore",
+    "descrizione": "Un urlo devastante infligge 10d6 danni sonori; stordisce le creature , danneggia gli oggetti",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Pugno serrato di Bigby",
+    "descrizione": "Una mano Grande fornisce copertura, spinge e attacca i nemici dell'incantatore",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Raggio polare",
+    "descrizione": "Attacco di contatto a distanza che infligge 1d6 danni da freddo per livello",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Sfera telecinetica di Otiluke",
+    "descrizione": "Come sfera elastica di Oliluke, ma l'incantatore è in grado di spostarla telecinericamente",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Clone",
+    "descrizione": "Un duplicato che si risveglia quando l'originale muore",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Creare non morti superiori",
+    "descrizione": "Per creare ombre , wraith, spettri o divoratori.",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Orrido avvizzimento",
+    "descrizione": "Infligge 1d6 danni per livello nel raggio di 9 M",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Simbolo di morte",
+    "descrizione": "Runa che uccide le creature vicine",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Corpo di ferro",
+    "descrizione": "il corpo dell'incantatore diventa di ferro vivente",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Metamorfosi di un oggetto",
+    "descrizione": "Trasforma un soggetto in qualcos'altro",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Stasi temporale",
+    "descrizione": "Mette il soggetto in animazione sospesa",
+    "scuola": "Trasmutazione"
+  }
+]

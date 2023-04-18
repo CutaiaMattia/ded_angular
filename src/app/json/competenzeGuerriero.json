@@ -1,0 +1,14 @@
+[
+  {
+    "competenza": "Competenza nelle armi e nelle armature",
+    "descrizione": [
+      "Il guerriero è competente nell'uso di tutte le armi semplici e da guerra, in tutte le armature (pesanti, medie e leggere )  e negli scudi (incluso lo scudo torre)."
+    ]
+  },
+  {
+    "competenza": "Talenti bonus",
+    "descrizione": [
+      " Al 1°,2°,4°,6°,8°,10°,12°,14°,16°,18°,20° livello il guerriero riceve un talento bonus orientato al combattimento"
+    ]
+  }
+]

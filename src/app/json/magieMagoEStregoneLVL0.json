@@ -1,0 +1,97 @@
+[
+  {
+    "nome": "Resistenza",
+    "descrizione": "Il soggetto ottiene bonus di +1 ai tiri salvezza",
+    "scuola": "Abiurazione"
+  },
+  {
+    "nome": "Frastornare",
+    "descrizione": "Una creatura umanoide con 4 DV o meno perde l'azione successiva",
+    "scuola": "Ammaliamento"
+  },
+  {
+    "nome": "Individuazione del magico",
+    "descrizione": "Individua incantesimi e oggetti magici nel raggio di 18 m",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Individuazione del veleno",
+    "descrizione": "Individua il veleno in una creatura o in tin oggetto",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Lettura del magico",
+    "descrizione": "Per leggere pergamene e libri degli incantesimi",
+    "scuola": "Divinazione"
+  },
+  {
+    "nome": "Fiotto acido",
+    "descrizione": "Sfera che infligge 1d3 danni da acido",
+    "scuola": "Evocazione"
+  },
+  {
+    "nome": "Suono fantasma",
+    "descrizione": "Suoni illusori",
+    "scuola": "Illusione"
+  },
+  {
+    "nome": "Lampo",
+    "descrizione": "Abbaglia una creatura (-1 ai tiri per colpire)",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Luce",
+    "descrizione": "toggetto risplende come una torcia",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Luci danzanti",
+    "descrizione": "Crea torce illusorie o altre luci",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Raggio di gelo",
+    "descrizione": "Raggio che infligge 1d3 danni da freddo",
+    "scuola": "Invocazione"
+  },
+  {
+    "nome": "Distruggere non morti",
+    "descrizione": "Infligge 1d6 danni a un non morto",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "II Tocco di affaticamento",
+    "descrizione": "Attacco di contatto rende affaticato il bersaglio",
+    "scuola": "Necromanzia"
+  },
+  {
+    "nome": "Aprire/Chiudere",
+    "descrizione": "Apre o chiude oggettipiccoli o leggeri",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Mano magica",
+    "descrizione": "Telecinesi per 2,5 kg",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Messaggio",
+    "descrizione": "Conversazione sussurrata a distanza",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Riparare",
+    "descrizione": "Effettua riparazioni minori su un oggetto",
+    "scuola": "Trasmutazione"
+  },
+  {
+    "nome": "Prestidigitazione",
+    "descrizione": "Effettua trucchi minori",
+    "scuola": "Universale"
+  },
+  {
+    "nome": "Sigillo arcano",
+    "descrizione": "Trascrive una ima personale (visibile o invisibile)",
+    "scuola": "Universale"
+  }
+]
