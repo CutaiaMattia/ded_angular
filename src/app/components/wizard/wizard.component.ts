@@ -8,7 +8,7 @@ import { ExtractJsonService } from 'src/app/services/extract-json.service';
   templateUrl: './wizard.component.html',
   styleUrls: ['./wizard.component.css']
 })
-export class WizardComponent implements OnInit , OnChanges{
+export class WizardComponent implements OnInit {
 
 
   constructor(private route: ActivatedRoute,
@@ -17,14 +17,9 @@ export class WizardComponent implements OnInit , OnChanges{
      private data : DataService){
 
   }
-  ngOnChanges(changes: SimpleChanges): void {
-    this.pageWidth = window.screen.width
-  }
 
 
   pg = this.data.pg;
-  pageWidth :number
-
 
   ca :number =Math.trunc(( Number(this.pg.destrezza)-10 )/2 +10 )
   iniziativa : number = Math.trunc((Number(this.pg.destrezza)-10)/2)
@@ -106,9 +101,9 @@ export class WizardComponent implements OnInit , OnChanges{
 
 
   ngOnInit(): void {
+
    this.isSpellsPage = this.route.snapshot.paramMap.get("lvl")?true:false;
    this.lvlPG =this.data.pg.livello
-   this.pageWidth = window.screen.width
 
 
    if(this.isSpellsPage){
