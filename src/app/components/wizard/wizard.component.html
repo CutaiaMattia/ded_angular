@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div *ngIf="!isSpellsPage; else spellPage" >
 
-  <div class="flex container-fluid">
+  <div class="d-md-flex container-fluid">
 
 <div class="container-fluid container-extend" style="overflow-y: hidden; overflow-x: hidden;">
 
@@ -21,14 +21,14 @@
       classe: {{pg.classe}}
     </h5>
   </div>
-  <div class="row">
-    <h5 class="col-auto">
+  <div class="row" style="margin-top: 5vh;">
+    <h5 class="col-md-6">
       CA :  {{ca}}
     </h5>
-    <h5 class="col-auto">
+    <h5 class="col-md-6">
       Iniziativa: {{iniziativa}}
     </h5>
-    <h5 class="col-auto">
+    <h5 class="col-md-6">
       BaB :
       <div class="mx-3" *ngIf="lvlPG<=10; else doubleValue">
         +{{Bab[pg.livello][0]}}
@@ -39,7 +39,7 @@
       </ng-template>
     </h5>
   </div>
-  <div class="row">
+  <div class="row" style="margin-top: 5vh;">
     <h5 class="col-auto">
       tempra :
       <div class="mx-3">
@@ -47,7 +47,7 @@
     </div>
     </h5>
   </div>
-  <div class="row">
+  <div class="row ">
     <h5 class="col-auto">
       riflessi :
       <div class="mx-3">
@@ -66,12 +66,11 @@
 
 </div>
 
-  <div class="row container-extend ">
-    <h3 class="col my-3 lvl" >
+
+    <h3 class="col-auto d-inline-block border border-5 my-5  "  style="height: 40px;" >
       lvl : {{pg.livello}}
     </h3>
 
-  </div>
 
 
 
@@ -118,7 +117,7 @@
 
 </div>
 
-<div class="container-fluid container-extend">
+<div class="container-fluid container-extend my-5">
   <div>
   <button class="btn btn-primary mx-3"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> spell book</button>
 
