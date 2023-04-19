@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, AfterViewChecked, Component, DoCheck, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 import { ExtractJsonService } from 'src/app/services/extract-json.service';
@@ -8,15 +8,23 @@ import { ExtractJsonService } from 'src/app/services/extract-json.service';
   templateUrl: './wizard.component.html',
   styleUrls: ['./wizard.component.css']
 })
-export class WizardComponent implements OnInit{
+export class WizardComponent implements OnInit , OnChanges{
+
+
   constructor(private route: ActivatedRoute,
      private lvl:ExtractJsonService,
      private routeNavigate : Router,
      private data : DataService){
 
   }
+  ngOnChanges(changes: SimpleChanges): void {
+    this.pageWidth = window.screen.width
+  }
+
 
   pg = this.data.pg;
+  pageWidth :number
+
 
   ca :number =Math.trunc(( Number(this.pg.destrezza)-10 )/2 +10 )
   iniziativa : number = Math.trunc((Number(this.pg.destrezza)-10)/2)
@@ -99,9 +107,9 @@ export class WizardComponent implements OnInit{
 
   ngOnInit(): void {
    this.isSpellsPage = this.route.snapshot.paramMap.get("lvl")?true:false;
-   console.log(this.route.snapshot.paramMap.get("lvl")?false:true)
-   console.log(this.route.snapshot.paramMap.get("lvl"))
    this.lvlPG =this.data.pg.livello
+   this.pageWidth = window.screen.width
+
 
    if(this.isSpellsPage){
     if(this.lvl.selectSpellLvl(Number(this.route.snapshot.paramMap.get("lvl")))!=null){
