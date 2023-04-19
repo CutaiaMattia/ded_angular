@@ -66,12 +66,12 @@
 <form
 #registrazione="ngForm"
 (ngSubmit)="registraPersonaggio(registrazione)">
-<div class="sposta-btn-registra">
-  <div style="display: flex;">
-  <div class="container-fluid container-extend">
-    <h3>creazione personaggio</h3>
-    <div class="row g-3 my-1">
-      <div class="col-auto">
+<div class="sposta-btn-registra ">
+  <div class="d-sm-flex">
+  <div class="container-fluid container-extend  col-xl-5 ">
+    <h3 class="col-6" >creazione personaggio</h3>
+    <div class="row g-3 my-1 ">
+      <div class="col-md-6 ">
         <input
           type="text"
           class="form-control"
@@ -82,7 +82,7 @@
           required
         />
       </div>
-      <div class="col-auto">
+      <div class="col-md-6">
         <input
           type="text"
           class="form-control"
@@ -96,9 +96,9 @@
     </div>
 
     <div class="row g-3 my-1">
-      <div class="col-auto item-center">
+      <div class="col-md-6 item-center">
         <h5 class="mx-2">razza:</h5>
-        <select class="form-select"
+        <select class="form-select mx-2"
         name="razza"
         required
         ngModel>
@@ -107,13 +107,13 @@
           <option value="elfo">elfo</option>
           <option value="gnomo">gnomo</option>
           <option value="mezzelfo">mezzelfo</option>
-          <option value="mezzorcho">mezzorcho</option>
+          <option value="mezzorcho">mezzorco</option>
           <option value="halfling">halfling</option>
         </select>
       </div>
-      <div class="col-auto item-center">
+      <div class="col-md-6 item-center ">
         <h5 class="mx-2">classe:</h5>
-        <select class="form-select"
+        <select class="form-select  mx-2"
         name="classe"
         required
         ngModel
@@ -166,8 +166,8 @@
     </div>
   </div>
 
-  <div class="container-fluid container-extend"  >
-    <h3>statistiche personaggio</h3>
+  <div class="container-fluid container-extend  col-xl-5"  >
+    <h3 class="col-6">statistiche personaggio</h3>
 
     <div class="row g-3 my-1">
       <div class="col-auto item-select"
