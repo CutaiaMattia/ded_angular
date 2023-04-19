@@ -27,3 +27,6 @@ font-size: x-large;
   display: flex;
   justify-content: space-between;
 }
+.lvl{
+  width: 18vw;
+}
