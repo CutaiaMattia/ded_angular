@@ -1,26 +1,28 @@
 <app-header></app-header>
-<div *ngIf="!isSpellsPage; else spellPage" >
+<div *ngIf="!isSpellsPage; else spellPage"  >
 
   <div class="d-md-flex container-fluid">
 
-<div class="container-fluid container-extend" style="overflow-y: hidden; overflow-x: hidden;">
-
+<div class="container-fluid container-sx  " style="margin-top: 5vh;">
+<div class="profile">
   <div class="row">
-    <h5 class="col-auto">
+    <h5 class="col-md-6">
       nome : {{pg.nomePG}}
     </h5>
-    <h5 class="col-auto">
+    <h5 class="col-md-6">
       cognome: {{pg.cognomePG}}
     </h5>
   </div>
   <div class="row">
-    <h5 class="col-auto">
+    <h5 class="col-md-6">
       razza : {{pg.razza}}
     </h5>
-    <h5 class="col-auto">
+    <h5 class="col-md-6">
       classe: {{pg.classe}}
     </h5>
   </div>
+</div>
+<div class="bonus">
   <div class="row" style="margin-top: 5vh;">
     <h5 class="col-md-6">
       CA :  {{ca}}
@@ -28,22 +30,29 @@
     <h5 class="col-md-6">
       Iniziativa: {{iniziativa}}
     </h5>
-    <h5 class="col-md-6">
+    <h5 class="col-auto">
       BaB :
-      <div class="mx-3" *ngIf="lvlPG<=10; else doubleValue">
-        +{{Bab[pg.livello][0]}}
+      <div class="mx-3 " *ngIf="lvlPG<=10; else doubleValue">
+        <h5>   +{{Bab[pg.livello][0]}}</h5>
+
       </div>
-      <ng-template #doubleValue>
-        +{{Bab[pg.livello][0]}} /
-        +{{Bab[pg.livello][1]}}
+      <ng-template #doubleValue class="mx-3">
+        <h5>
+          +{{Bab[pg.livello][0]}} /
+          +{{Bab[pg.livello][1]}}
+        </h5>
+
       </ng-template>
     </h5>
   </div>
+</div>
+<div class="ts">
   <div class="row" style="margin-top: 5vh;">
     <h5 class="col-auto">
       tempra :
       <div class="mx-3">
-      {{ts[pg.livello][0]}}
+        <h5>{{ts[pg.livello][0]}}</h5>
+
     </div>
     </h5>
   </div>
@@ -51,7 +60,8 @@
     <h5 class="col-auto">
       riflessi :
       <div class="mx-3">
-      {{ts[pg.livello][1]}}
+        <h5>{{ts[pg.livello][1]}}</h5>
+
       </div>
     </h5>
   </div>
@@ -59,18 +69,20 @@
     <h5 class="col-auto">
       volontà :
       <div class="mx-3">
-      {{ts[pg.livello][2]}}
+        <h5>{{ts[pg.livello][2]}}</h5>
+
       </div>
     </h5>
   </div>
+</div>
 
 </div>
 
-
-    <h3 class="col-auto d-inline-block border border-5 my-5  "  style="height: 40px;" >
-      lvl : {{pg.livello}}
-    </h3>
-
+<div class="level col-auto" >
+  <h3 class="row d-inline-block border border-5 my-5  "  style="height: 40px;" >
+    lvl : {{pg.livello}}
+  </h3>
+</div>
 
 
 
@@ -81,9 +93,12 @@
 
 <div class="container-fluid container-extend">
 
+<div class="image-profile">
   <img src="./assets/img/maga-elfica.jpg" class="img-thumbnail" alt="image pg">
+</div>
 
   <br>
+<div class="stats">
   <h5>statistiche</h5>
   <div class="row">
     <div class="col-auto  item-selec">
@@ -109,6 +124,7 @@
       car: {{pg.carisma}}
     </div>
   </div>
+</div>
 
 </div>
 
@@ -118,8 +134,8 @@
 </div>
 
 <div class="container-fluid container-extend my-5">
-  <div>
-  <button class="btn btn-primary mx-3"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> spell book</button>
+  <div class="buttons-helper">
+  <button class="btn btn-primary mx-3"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> Incantesimi</button>
 
 
   <button type="button" class=" btn btn-primary mx-3" routerLink="/talents">talenti</button>
@@ -128,7 +144,7 @@
     <div class="offcanvas offcanvas-start "   style="width: calc(100% - 75%); min-width: 180px; max-width: 296px ;"   data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div class="offcanvas-header" >
 
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Spells</h5>
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Incantesimi</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -142,43 +158,43 @@
         -----------------
       </div>
       <div class="row">
-        <a  class="btn-sm  col-auto" routerLink="/wizard/spells/lvl/0" >LVL0</a>
+        <a  class="btn-sm  col-auto" routerLink="/mago/incantesimi/lvl/0" >LVL0</a>
         <h5 class="col-auto" >{{spellsForDay[lvlPG][0]}} </h5>
       </div>
       <div class="row">
-        <a class="btn-sm  col-auto" routerLink="/wizard/spells/lvl/1">LVL1</a>
+        <a class="btn-sm  col-auto" routerLink="/mago/incantesimi/lvl/1">LVL1</a>
         <h5 class="col-auto" >{{spellsForDay[lvlPG][1]}} </h5>
       </div>
       <div class="row">
-        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=3" routerLink="/wizard/spells/lvl/2">LVL2</a>
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=3" routerLink="/mago/incantesimi/lvl/2">LVL2</a>
         <h5 class="col-auto">{{spellsForDay[lvlPG][2]}} </h5>
       </div>
       <div class="row">
-        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=5" routerLink="/wizard/spells/lvl/3">LVL3</a>
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=5" routerLink="/mago/incantesimi/lvl/3">LVL3</a>
         <h5 class="col-auto">{{spellsForDay[lvlPG][3]}}</h5>
       </div>
       <div class="row">
-        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=7" routerLink="/wizard/spells/lvl/4">LVL4</a>
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=7" routerLink="/mago/incantesimi/lvl/4">LVL4</a>
         <h5 class="col-auto">{{spellsForDay[lvlPG][4]}}</h5>
       </div>
       <div class="row">
-        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=9" routerLink="/wizard/spells/lvl/5">LVL5</a>
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=9" routerLink="/mago/incantesimi/lvl/5">LVL5</a>
         <h5 class="col-auto">{{spellsForDay[lvlPG][5]}}</h5>
       </div>
       <div class="row">
-        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=11" routerLink="/wizard/spells/lvl/6">LVL6</a>
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=11" routerLink="/mago/incantesimi/lvl/6">LVL6</a>
         <h5 class="col-auto">{{spellsForDay[lvlPG][6]}}</h5>
       </div>
       <div class="row">
-        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=13" routerLink="/wizard/spells/lvl/7">LVL7</a>
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=13" routerLink="/mago/incantesimi/lvl/7">LVL7</a>
         <h5 class="col-auto">{{spellsForDay[lvlPG][7]}}</h5>
       </div>
       <div class="row">
-        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=15" routerLink="/wizard/spells/lvl/8">LVL8</a>
+        <a class="btn-sm  col-auto"  *ngIf="lvlPG>=15" routerLink="/mago/incantesimi/lvl/8">LVL8</a>
         <h5 class="col-auto">{{spellsForDay[lvlPG][8]}}</h5>
       </div>
       <div class="row">
-        <a class="btn-sm  col-auto" *ngIf="lvlPG>=17" routerLink="/wizard/spells/lvl/9">LVL9</a>
+        <a class="btn-sm  col-auto" *ngIf="lvlPG>=17" routerLink="/mago/incantesimi/lvl/9">LVL9</a>
         <h5 class="col-auto">{{spellsForDay[lvlPG][9]}}</h5>
       </div>
     </ul>
@@ -221,7 +237,7 @@
   <br>
 <div class="container-fluid space-between">
   <h1> Incantesimi di livello {{lvlPage}}</h1>
-  <button class="btn btn-primary " routerLink="/wizard"> torna indietro</button>
+  <button class="btn btn-primary " routerLink="/mago"> torna indietro</button>
 </div>
   <div class="table-responsive">
 <br>

@@ -6,8 +6,8 @@ import { TalentsComponent } from './components/talents/talents.component';
 
 const routes: Routes = [
   {path:"" , component:HomepageComponent},
-  {path:"wizard", component:WizardComponent},
-  {path: "wizard/spells/lvl/:lvl", component:WizardComponent},
+  {path:"mago", component:WizardComponent},
+  {path: "mago/incantesimi/lvl/:lvl", component:WizardComponent},
   {path:"talents", component:TalentsComponent}
 
 ];

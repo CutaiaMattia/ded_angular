@@ -15,6 +15,7 @@ export class HomepageComponent {
 
   registraPersonaggio(ngForm: NgForm) {
     const formToPg = ngForm.form.value;
+
     this.classe = formToPg.classe
     this.data.createPg(
       formToPg.nomePG,
@@ -29,7 +30,14 @@ export class HomepageComponent {
       formToPg.sag,
       formToPg.car
     );
+
+    console.log(ngForm)
+    console.log(ngForm.form.value)
+
+
     localStorage.setItem('pg', JSON.stringify(this.data.pg));
     this.route.navigate([`/${this.classe}`])
   }
+
+
 }

@@ -111,7 +111,7 @@ export class WizardComponent implements OnInit {
       this.lvlPage = Number(this.route.snapshot.paramMap.get("lvl"));
       this.spells = this.lvl.selectSpellLvl(Number(this.route.snapshot.paramMap.get("lvl")))
     } else{
-      this.routeNavigate.navigate(["/wizard"])
+      this.routeNavigate.navigate(["/mago"])
     }
 
    }
