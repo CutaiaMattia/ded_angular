@@ -1,28 +1,95 @@
-.tablePage :not(h1){
-  font-size: 12px;
-  margin: 0;
-  padding: 0;
-}
-
-.table>:not(caption)>*>* {
-padding: 0.3rem;
-}
-
 .col-auto{
   display: flex;
-  text-align: center;
-
 }
 
-
-.flex{
-  display: flex;
+.center{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
 }
 
-.space-between{
-  display: flex;
-  justify-content: space-between;
+/*
+.container-sx{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
-.lvl{
-  width: 18vw;
+
+*/
+
+/*
+
+----------------------------------------------------------------------------------------------DISPLAY GRID GESTIONALE
+
+*/
+.grid-container{
+  display: grid;
+  gap: 2em;
+  grid-template-areas: "uno" "due" "tre" "quattro" "cinque" "sei" "sette" ;
 }
+
+.elemento:nth-child(1){
+  grid-area: uno;
+  }
+
+  .elemento:nth-child(2) {
+    grid-area: due;
+  }
+
+  .elemento:nth-child(3) {
+    grid-area: tre;
+  }
+
+  .elemento:nth-child(4) {
+    grid-area: quattro;
+  }
+
+  .elemento:nth-child(5) {
+    grid-area: cinque;
+  }
+
+  .elemento:nth-child(6) {
+    grid-area: sei;
+  }
+
+  .elemento:nth-child(7) {
+    grid-area: sette;
+  }
+
+  @media (max-width: 1920px) {
+    .grid-container{
+      grid-template-areas:". . . . ." ". . . . ."
+      " . uno quattro cinque . " " . due . sei ." " . tre  . .   ." ". . sette . ."
+        ;
+    }
+  }
+
+@media (max-width: 1280px) {
+  .grid-container{
+    grid-template-areas:". . . . ." ". . . . ."
+      " . uno . cinque . " " . quattro . sei ." " . due .  tre ." ". . sette . ."
+      ;
+  }
+}
+
+@media (max-width: 940px) {
+
+  .grid-container{
+    grid-template-areas:". .  . ." ". .  . ."
+    " . uno cinque . " " . quattro  sei ." " . due tre ." ".  sette . ."
+      ;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container{
+    grid-template-areas:". . ." ". . ."
+      ". uno ." ". cinque ." ". quattro ." ". sei ." ". due ." ". tre ." ". sette ."
+      ;
+  }
+}
+

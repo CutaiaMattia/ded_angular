@@ -1,10 +1,10 @@
 <app-header></app-header>
 <div *ngIf="!isSpellsPage; else spellPage"  >
 
-  <div class="d-md-flex container-fluid">
 
-<div class="container-fluid container-sx  " style="margin-top: 5vh;">
-<div class="profile">
+
+<div class="grid-container" >
+<div class="elemento center">
   <div class="row">
     <h5 class="col-md-6">
       nome : {{pg.nomePG}}
@@ -22,7 +22,8 @@
     </h5>
   </div>
 </div>
-<div class="bonus">
+
+<div class="elemento">
   <div class="row" style="margin-top: 5vh;">
     <h5 class="col-md-6">
       CA :  {{ca}}
@@ -46,7 +47,8 @@
     </h5>
   </div>
 </div>
-<div class="ts">
+
+<div class="elemento">
   <div class="row" style="margin-top: 5vh;">
     <h5 class="col-auto">
       tempra :
@@ -76,29 +78,17 @@
   </div>
 </div>
 
-</div>
-
-<div class="level col-auto" >
-  <h3 class="row d-inline-block border border-5 my-5  "  style="height: 40px;" >
+<div class="elemento" >
+  <h3 class="d-inline-block border border-5 my-5  "  style="height: 40px;" >
     lvl : {{pg.livello}}
   </h3>
 </div>
 
-
-
-
-
-
-
-
-<div class="container-fluid container-extend">
-
-<div class="image-profile">
+<div class="elemento">
   <img src="./assets/img/maga-elfica.jpg" class="img-thumbnail" alt="image pg">
 </div>
 
-  <br>
-<div class="stats">
+<div class="elemento">
   <h5>statistiche</h5>
   <div class="row">
     <div class="col-auto  item-selec">
@@ -126,21 +116,37 @@
   </div>
 </div>
 
-</div>
+<div class="elemento btn-group1">
 
-
-
-
-</div>
-
-<div class="container-fluid container-extend my-5">
-  <div class="buttons-helper">
   <button class="btn btn-primary mx-3"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> Incantesimi</button>
-
-
   <button type="button" class=" btn btn-primary mx-3" routerLink="/talents">talenti</button>
 
 </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  off canvas
+-->
+
+
+
+
     <div class="offcanvas offcanvas-start "   style="width: calc(100% - 75%); min-width: 180px; max-width: 296px ;"   data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div class="offcanvas-header" >
 
@@ -205,7 +211,7 @@
     </div>
 
 
-</div>
+
 
 
 
