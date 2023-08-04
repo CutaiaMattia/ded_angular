@@ -2,12 +2,61 @@
   background-color: rgb(0, 0, 0);
 }
 
+h3{
+  color: #0b5ed7;
+}
 
 .iconSize{
   height: 3vh;
 }
 
-
-.container-header{
-  width: 100vw;
+.link{
+  cursor: pointer;
 }
+
+
+.elemento{
+  justify-content: baseline;
+}
+
+.grid-container{
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  width: auto;
+  gap: 2em;
+  grid-template-areas: "uno" "due" "tre" "quattro";
+  
+}
+
+.elemento:nth-child(1){
+  grid-area: uno;
+  }
+
+.elemento:nth-child(2) {
+  grid-area: due;
+  }
+
+ .elemento:nth-child(3){
+ grid-area: tre;
+ }
+  
+.elemento:nth-child(4) {
+    grid-area: quattro;
+  }
+
+
+
+@media (min-width:  480px) {
+  .grid-container{
+    grid-template-areas:". . . . . ." ". uno due tre quattro ." ". . . . . ."
+
+      ;
+  }
+}
+
+  @media (max-width: 481px ) {
+    .grid-container{
+      grid-template-areas:". . . . . . ." ". . . uno . . ."  ". . due tre quattro . ." ". . . . . . .";
+    }
+  }

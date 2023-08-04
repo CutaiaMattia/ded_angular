@@ -1,8 +1,41 @@
-.centra-btn{
-  text-align: center;
+div{
+  min-width: 320px;
 }
 
-
-h5{
-  font-size: medium;
+.grid-container{
+  display: grid;
+  gap: 2em;
+  grid-template-areas: "uno" "due" ;
 }
+
+.elemento:nth-child(1){
+  grid-area: uno;
+  }
+
+.elemento:nth-child(2) {
+  grid-area: due;
+  }
+
+  .elemento{
+    width: 30vw;
+    height: 15vh;
+  }
+
+
+@media (max-width: 1920px) {
+  .grid-container{
+    grid-template-areas:". . . . . ." ". . . . . ."
+    ". . . . . ." ". . . . . ." ". . . . . ." ". . . . . ." ". . . . . ."
+    ". . . . . ." ". . uno due . ." ". . . . . ." ". . . . . ."
+      ;
+  }
+}
+
+  @media (max-width: 480px ) {
+    .grid-container{
+      grid-template-areas:". . . . ." ". . . . ."
+      ". . . . ." ". . uno . ." ". . due . ." ". . . . ."
+        ;
+    }
+  }
+

@@ -1,0 +1,25 @@
+<app-header></app-header>
+ 
+<h1 class="d-flex align-items-center justify-content-center flex-column gap-4 my-3">Download & Tabelle</h1>
+
+
+<div  class="d-flex align-items-center justify-content-center flex-column gap-4">
+  <form #searchForm="ngForm" class="d-flex my-4" (ngSubmit)="search(searchForm)">
+    <input class="form-control me-2" type="search" placeholder="Search" ngModel name="keyword" aria-label="Search">
+    <button class="btn btn-primary" type="submit" >Search</button>
+  </form>
+</div>
+
+
+
+  <div class="row ">
+    <div class="col-sm-4" *ngFor="let manual of manualLinks;let i = index">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ manual.name }}</h5>
+          <a href="{{manual.url}}" class="btn btn-primary">VAI!</a>
+        </div>
+      </div>
+
+    </div>
+  </div>

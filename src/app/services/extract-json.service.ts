@@ -12,6 +12,7 @@ import spellsLvl6 from '../json/magieMagoEStregoneLVL6.json';
 import spellsLvl7 from '../json/magieMagoEStregoneLVL7.json';
 import spellsLvl8 from '../json/magieMagoEStregoneLVL8.json';
 import spellsLvl9 from '../json/magieMagoEStregoneLVL9.json';
+import manualLinks from '../json/manualLinks.json';
 
 @Injectable({
   providedIn: 'root',
@@ -40,6 +41,12 @@ export class ExtractJsonService {
     descrizione: string;
     scuola: string;
   }[]
+
+
+  objManualLinks :{
+    name: string;
+    url: string;
+  }[] = manualLinks;
 
  selectSpellLvl(lvl:number) {
     switch(lvl){
