@@ -13,6 +13,7 @@ import { ManualsComponent } from './components/manuals/manuals.component';
 import { ToolsComponent } from './components/tools/tools.component';
 import { AttackComponent } from './components/tools/attack/attack.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

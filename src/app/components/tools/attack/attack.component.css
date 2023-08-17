@@ -1,11 +1,24 @@
 .row{
     margin: 2%;
+    justify-content: space-around;
+
   }
+.multiAttack{
+
+display: flex;
+column-gap: 2vw;
+align-items: center;
+}
+
+
+
+
   .card{
     display: flex;
     align-items: center;
     text-align: center;
     margin: 2vh;
+    border: none;
   }
 
   .iconSize{
@@ -16,9 +29,13 @@
   }
 
 #offcanvasTop{
-    height: 35vh;
+    height: auto;
 }
 
+.elemento{
+  justify-content: space-between;
+  text-transform: inherit;
+}
 
 
 .grid-container{
@@ -28,49 +45,147 @@
     justify-content: center;
     width: auto;
     gap: 1em;
-    grid-template-areas: "uno" "due" "tre" "quattro" "cinque";
-    
+    grid-template-areas: "uno" "due" "tre" "quattro" ;
+
   }
-  
+
   .elemento:nth-child(1){
     display: flex;
     align-items: center;
     flex-direction: column;
     grid-area: uno;
     }
-  
+
   .elemento:nth-child(2) {
     display: flex;
     align-items: center;
     flex-direction: column;
     grid-area: due;
     }
-  
+
    .elemento:nth-child(3){
     display: flex;
     align-items: center;
     flex-direction: column;
    grid-area: tre;
    }
-    
+
    .elemento:nth-child(4){
     display: flex;
-    align-items: center;
     flex-direction: column;
     grid-area: quattro;
+    justify-content: flex-end;
     }
 
-    .elemento:nth-child(5){
-        grid-area: cinque;
-        }
-  
+
+
 @media (min-width:  480px) {
     .grid-container{
-      grid-template-areas:". . . . . . . . . . . . . . . ." ". . . uno . . due . . tre . . quattro . . ." ". . . . . . . . . . . . . . . cinque"
-  
-        ;
+      grid-template-areas:". . . . . . . . . . . . . . . ." ". .  uno . . . due . . tre . . quattro . . ." ". . . . . . . . . . . . . . . .";
     }
+
+  .pos{
+      display: flex;
+      align-items: center;
+      justify-content: space-around
+
+}
+.stats{
+  display: flex;
+  flex-direction: row;
+  column-gap: 3vw;
+
+}
   }
 
 
-  
+@media (max-width:  630px) {
+  .grid-container{
+    grid-template-areas:". . . " ".  uno ." " . due . " " . tre ." ". . . " " . quattro . " ". . . " ;
+  }
+    .pos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+.stats{
+  display: flex;
+  flex-direction: row;
+  column-gap: 3vw;
+
+}
+}
+
+@media (min-width: 1180px) {
+ .pos{
+      display: flex;
+      align-items: center;
+
+ }
+ .stats{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1vw;
+
+
+}
+
+
+
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    background-color: dodgerblue;
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 70%, 90% {
+    background-color: blue;
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 80% {
+    background-color: rgb(170, 140, 255);
+    transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+
+
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+.animated {
+  animation-duration:  1s;
+  animation-fill-mode: both;
+}
+
+.tooltip {
+  background-color: transparent;
+  border-radius: 8px;
+  color: transparent;
+  font-size: 0.7em;
+  position: absolute;
+  transition: 0.5s;
+  padding: 0.5em 1em;
+  margin-top: 0;
+  z-index: 1000;
+
+}
+:hover > .tooltip {
+  background-color: antiquewhite;
+  color: black;
+  font-size: 1.2em;
+  opacity: 1;
+}

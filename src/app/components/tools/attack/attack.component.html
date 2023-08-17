@@ -1,68 +1,376 @@
+
+
 <app-header></app-header>
+<div class="row">
+  <div class="col-6 col-sm-6 col-xl-2 col-md-4 ">
+    <div class="card ">
+      <button type="button" class="btn btn-primary my-1" (click)="rollMultiAttack1();  play()" >multi attacco 1</button>
+         <div class="accordion accordion-flush" id="accordionFlushExample">
+           <div class="accordion-item">
+             <button type="button "  class="  btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="white" class="bi bi-gear " viewBox="0 0 16 16">
+                  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                </svg>
+              </button>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+
+
+                <div class="accordion-body  " >
+
+
+                  <div *ngFor="let attacco of listAttack; let i = index " class="multiAttack" >
+
+                    <button id="attacco{{attacco.id}}"  class="btn btn-outline-primary my-1" (click)="saveAttackIntoMultiAttack1(i)"  > attacco{{attacco.id}}</button>
+                    <div *ngIf="attacco.listMultiAttackIsPresent.multiAttack1">
+                      <svg style="background-color: #0d6efd; border-radius: 50%" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                      </svg>
+                     </div>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+              </div>
+           </div>
+         </div>
+     </div>
+  </div>
+  <div class="col-6 col-sm-6 col-xl-2 col-md-4">
+    <div class="card ">
+      <button type="button" class="btn btn-primary my-1" (click)="rollMultiAttack2();  play()">multi attacco 2</button>
+         <div class="accordion accordion-flush" id="accordionFlushExample">
+           <div class="accordion-item">
+             <button type="button "  class="  btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="white" class="bi bi-gear " viewBox="0 0 16 16">
+                  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                </svg>
+              </button>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+
+                  <div *ngFor="let attacco of listAttack; let i = index " class="multiAttack" >
+
+                    <button id="attacco{{attacco.id}}"  class='btn btn-outline-primary my-1' (click)="saveAttackIntoMultiAttack2(i)"  > attacco{{attacco.id}}</button>
+                    <div *ngIf="attacco.listMultiAttackIsPresent.multiAttack2">
+                      <svg style="background-color: #0d6efd; border-radius: 50%" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                      </svg>
+                     </div>
+
+                  </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+              </div>
+           </div>
+         </div>
+     </div>
+
+  </div>
+  <div class="col-6 col-sm-6 col-xl-2 col-md-4">
+    <div class="card ">
+      <button type="button" class="btn btn-primary my-1" (click)="rollMultiAttack3();  play()">multi attacco 3</button>
+         <div class="accordion accordion-flush" id="accordionFlushExample">
+           <div class="accordion-item">
+             <button type="button "  class="  btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="white" class="bi bi-gear " viewBox="0 0 16 16">
+                  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                </svg>
+              </button>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                  <div *ngFor="let attacco of listAttack; let i = index " class="multiAttack" >
+
+                    <button id="attacco{{attacco.id}}"  class='btn btn-outline-primary my-1' (click)="saveAttackIntoMultiAttack3(i)"  > attacco{{attacco.id}}</button>
+                    <div *ngIf="attacco.listMultiAttackIsPresent.multiAttack3">
+                      <svg style="background-color: #0d6efd; border-radius: 50%" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                      </svg>
+                     </div>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+              </div>
+           </div>
+         </div>
+     </div>
+  </div>
+  <div class="col-6 col-sm-6 col-xl-2 col-md-4">
+    <div class="card ">
+      <button type="button" class="btn btn-primary my-1" (click)="rollMultiAttack4(); play()">multi attacco 4</button>
+         <div class="accordion accordion-flush" id="accordionFlushExample">
+           <div class="accordion-item">
+             <button type="button "  class="  btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="white" class="bi bi-gear " viewBox="0 0 16 16">
+                  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                </svg>
+              </button>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                  <div *ngFor="let attacco of listAttack; let i = index " class="multiAttack" >
+
+                    <button id="attacco{{attacco.id}}"  class='btn btn-outline-primary my-1'  (click)="saveAttackIntoMultiAttack4(i)"  > attacco{{attacco.id}}</button>
+                    <div *ngIf="attacco.listMultiAttackIsPresent.multiAttack4">
+                      <svg style="background-color: #0d6efd; border-radius: 50%" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                      </svg>
+                     </div>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+           </div>
+         </div>
+     </div>
+  </div>
+
+</div>
+
 
 
 <div class="row ">
-    <div class="col-sm-2" >
-      <div class="card">
-        <div class="card-body">
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-            <img class="iconSize link" src="./assets/img/add.png" alt="add image" >
-        </button>
-            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-              <div class="offcanvas-header">
-                <h5 id="offcanvasTopLabel">Parametri attacchi</h5>
+  <div class="  col-md-6 col-xl-4 row-cols-lg  " *ngFor="let single of listAttack;let i = index">
 
-
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-
-
-             <div class="grid-container">
-
-
-                <div class="elemento">
-                    <h3>attacco numero</h3>
-                    <select class="form-select">
-                        <option value="1"> 1 </option>
-                    </select>
-                </div>
-
-                <div class="elemento">
-                    <h3>for/int</h3>
-                    <select class="form-select">
-                        <option value="1"> 1 </option>
-                    </select>
-                </div>
-               
-                <div class="elemento">
-                    <h3>bonus</h3>
-                    <select class="form-select">
-                        <option value="1"> 1 </option>
-                    </select>
-                </div>
-                
-                <div class="elemento">
-                    <h3>bab</h3>
-                    <select class="form-select" >
-                        <option value="1"> 1 </option>
-                    </select>
-                </div>
-                     
-                <div class="elemento">
-                    <button class="btn btn-primary"> salva</button>
-                </div>
-
-             </div>
-              </div>
+    <div class="card cardNoBorder">
+      <div class="card-body">
+        <h5 class="card-title">attacco {{single.id}}</h5>
+        <div class="stats">
+          <div>
+             <h3>MOD</h3>
+             <h3> {{single.mod}}</h3>
+             <button class="btn btn-primary " type="button"   id="lanciaBTN" (click)="roll(i); play()">lancia</button>
             </div>
+          <div >
+          <h3>BONUS </h3>
+          <h3>{{single.bonus}}</h3>
+          <button class="btn btn-primary"  type="button">aggiungi bonus</button>
 
+          </div>
+          <div>
+          <h3>bab </h3>
+          <h3>{{single.bab}}</h3>
+          <button class="btn btn-danger" type="button" (click)="delete(i)">elimina</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class=" col-md-6 col-xl-4" >
+    <div class="card cardNoBorder">
+      <div class="card-body">
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+          <img class="iconSize link" src="./assets/img/add.png" alt="add image" >
+      </button>
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasTopLabel">Parametri attacchi</h5>
+
+
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+              <form
+              #attack="ngForm"
+              (ngSubmit)="saveAttack(attack)">
+
+           <div class="grid-container">
 
 
 
-  
+              <div class="elemento">
+               <div style="width: 20vw;">
+                  <h3 class="text-break"> mod for / int / des</h3>
+                </div>
+                  <select class="form-select"   reqiured    ngModel="0"
+                  name="mod">
+                    <option value="0" selected> 0 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                    <option value="8"> 8 </option>
+                    <option value="9"> 9 </option>
+                    <option value="10"> 10 </option>
+                    <option value="11"> 11 </option>
+                    <option value="12"> 12 </option>
+                    <option value="13"> 13 </option>
+                    <option value="14"> 14 </option>
+                    <option value="15"> 15 </option>
+                    <option value="16"> 16 </option>
+                    <option value="17"> 17 </option>
+                    <option value="18"> 18 </option>
+                    <option value="19"> 19 </option>
+                    <option value="20"> 20 </option>
+                    <option value="21"> 21 </option>
+                    <option value="22"> 22 </option>
+                    <option value="23"> 23 </option>
+                    <option value="24"> 24 </option>
+                    <option value="25"> 25 </option>
+                    <option value="26"> 26 </option>
+                    <option value="27"> 27 </option>
+                    <option value="28"> 28 </option>
+                    <option value="29"> 29 </option>
+                    <option value="30"> 30 </option>
+                  </select>
+              </div>
+
+              <div class="elemento">
+                  <h3>bonus vari</h3>
+                  <select class="form-select"  reqiured     ngModel="0"
+                  name="bonus">
+                    <option value="0" selected> 0 </option>
+                      <option value="1"> 1 </option>
+                      <option value="2"> 2 </option>
+                      <option value="3"> 3 </option>
+                      <option value="4"> 4 </option>
+                      <option value="5"> 5 </option>
+                      <option value="6"> 6 </option>
+                      <option value="7"> 7 </option>
+                      <option value="8"> 8 </option>
+                      <option value="9"> 9 </option>
+                      <option value="10"> 10 </option>
+                  </select>
+              </div>
+
+              <div class="elemento">
+                  <h3>bab</h3>
+                  <select class="form-select"   reqiured    ngModel="0"
+                  name="bab">
+                    <option value="0" selected > 0 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                    <option value="8"> 8 </option>
+                    <option value="9"> 9 </option>
+                    <option value="10"> 10 </option>
+                    <option value="11"> 11 </option>
+                    <option value="12"> 12 </option>
+                    <option value="13"> 13 </option>
+                    <option value="14"> 14 </option>
+                    <option value="15"> 15 </option>
+                    <option value="16"> 16 </option>
+                    <option value="17"> 17 </option>
+                    <option value="18"> 18 </option>
+                    <option value="19"> 19 </option>
+                    <option value="20"> 20 </option>
+                    <option value="21"> 21 </option>
+                    <option value="22"> 22 </option>
+                    <option value="23"> 23 </option>
+                    <option value="24"> 24 </option>
+                    <option value="25"> 25 </option>
+                    <option value="26"> 26 </option>
+                    <option value="27"> 27 </option>
+                    <option value="28"> 28 </option>
+                    <option value="29"> 29 </option>
+                    <option value="30"> 30 </option>
+                  </select>
+              </div>
+
+              <div class="elemento ">
+                  <button class="btn btn-primary " type="submit"   data-bs-dismiss="offcanvas" aria-label="Close"> salva</button>
+              </div>
+
+           </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+
+<div class="position-fixed top-50 end-0 translate-middle" style="margin-right: 1vw;">
+  <button class="btn btn-primary" id="offcanvasBTN"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"  aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel" style="display: contents;">Storico tiri dadi</h5>
+      <button type="button" class="btn btn-danger"  (click)="deleteStoryText()"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-trash" viewBox="0 0 16 16">
+        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+      </svg></button>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div *ngFor="let result of storyText">
+
+        <pre>  {{result}}</pre>
+
+      </div>
+
+    </div>
+  </div>
