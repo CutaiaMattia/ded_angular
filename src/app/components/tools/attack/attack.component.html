@@ -9,9 +9,9 @@
 
 <div  class="col-10">
 
-<div class="row">
+<div class="row rowCustom">
   <div class=" col-sm-6 col-xl-2 col-md-4 ">
-    <div class="card ">
+    <div class="card cardNoBorder ">
       <button type="button" class="btn btn-primary my-1" (click)="rollMultiAttack1();  play()" >multi attacco 1</button>
          <div class="accordion accordion-flush" id="accordionFlushExample">
            <div class="accordion-item">
@@ -54,7 +54,7 @@
      </div>
   </div>
   <div class=" col-sm-6 col-xl-2 col-md-4">
-    <div class="card ">
+    <div class="card cardNoBorder">
       <button type="button" class="btn btn-primary my-1" (click)="rollMultiAttack2();  play()">multi attacco 2</button>
          <div class="accordion accordion-flush" id="accordionFlushExample">
            <div class="accordion-item">
@@ -98,7 +98,7 @@
 
   </div>
   <div class=" col-sm-6 col-xl-2 col-md-4">
-    <div class="card ">
+    <div class="card cardNoBorder">
       <button type="button" class="btn btn-primary my-1" (click)="rollMultiAttack3();  play()">multi attacco 3</button>
          <div class="accordion accordion-flush" id="accordionFlushExample">
            <div class="accordion-item">
@@ -138,7 +138,7 @@
      </div>
   </div>
   <div class=" col-sm-6 col-xl-2 col-md-4">
-    <div class="card ">
+    <div class="card cardNoBorder">
       <button type="button" class="btn btn-primary my-1" (click)="rollMultiAttack4(); play()">multi attacco 4</button>
          <div class="accordion accordion-flush" id="accordionFlushExample">
            <div class="accordion-item">
@@ -186,29 +186,44 @@
 
 
 <div class="row ">
-  <div class="  col-md-6 col-xl-4 row-cols-lg  " *ngFor="let single of listAttack;let i = index">
-
-    <div class="card cardNoBorder">
+  <div class="  col-sm-12 col-xl-4 col-md-6  " *ngFor="let single of listAttack;let i = index">
+    <div class="card ">
       <div class="card-body">
-        <h5 class="card-title">attacco {{single.id}}</h5>
-        <div class="stats">
-          <div>
-             <h3>MOD</h3>
-             <h3> {{single.mod}}</h3>
-             <button class="btn btn-primary " type="button"   id="lanciaBTN" (click)="roll(i); play()">lancia</button>
-            </div>
-          <div >
-          <h3>BONUS </h3>
-          <h3>{{single.bonus}}</h3>
-          <button class="btn btn-primary"  type="button">aggiungi bonus</button>
-
+        <div class="col-12">
+          <h5 class="card-title">attacco {{single.id}}</h5>
+        </div>
+        <div class="row ">
+          <div class="col-6">
+            <h3>TxC</h3>
           </div>
-          <div>
-          <h3>bab </h3>
-          <h3>{{single.bab}}</h3>
-          <button class="btn btn-danger" type="button" (click)="delete(i)">elimina</button>
+          <div class="col-6">
+            <h3>Danni</h3>
           </div>
         </div>
+        <div class="row">
+          <div class="col-6">
+            <h3>1d20 + </h3>
+          </div>
+          <div class="col-6">
+            <h3> (?d?) + </h3>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-4 ">
+            <button class="btn btn-primary " style="margin-bottom: 1vh;" type="button"   id="lanciaBTN" (click)="roll(i); play()">TxC</button>
+            <button class="btn btn-primary " type="button"   id="lanciaBTN" (click)="roll(i); play()">danni </button>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-primary "  type="button">modifica</button>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-danger" type="button" (click)="delete(i)">elimina</button>
+          </div>
+        </div>
+
+
+
+
       </div>
     </div>
   </div>

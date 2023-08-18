@@ -11,7 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TalentsComponent } from './components/talents/talents.component';
 import { ManualsComponent } from './components/manuals/manuals.component';
 import { ToolsComponent } from './components/tools/tools.component';
-import { AttackComponent } from './components/attack/attack.component';
+import { AttackComponent } from './components/tools/attack/attack.component';
 
 
 @NgModule({
