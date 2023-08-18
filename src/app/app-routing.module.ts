@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: "", component:HomepageComponent},
   {path:"register" , component:RegisterComponent},
   {path:"tools" , component:ToolsComponent},
-  {path:"tools/attack" , component:AttackComponent},
+  {path:"attack" , component:AttackComponent},
   {path:"manuals" , component:ManualsComponent},
   {path:"mago", component:WizardComponent},
   {path: "mago/incantesimi/lvl/:lvl", component:WizardComponent},
