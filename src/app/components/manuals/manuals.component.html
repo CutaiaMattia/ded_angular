@@ -1,10 +1,10 @@
 <app-header></app-header>
- 
+
 <h1 class="d-flex align-items-center justify-content-center flex-column gap-4 my-3">Download & Tabelle</h1>
 
 
 <div  class="d-flex align-items-center justify-content-center flex-column gap-4">
-  <form #searchForm="ngForm" class="d-flex my-4" (ngSubmit)="search(searchForm)">
+  <form #searchForm="ngForm" class="d-flex mx-2 my-4" (ngSubmit)="search(searchForm)">
     <input class="form-control me-2" type="search" placeholder="Search" ngModel name="keyword" aria-label="Search">
     <button class="btn btn-primary" type="submit" >Search</button>
   </form>

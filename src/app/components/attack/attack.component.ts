@@ -96,7 +96,7 @@ console.log(this.countId)
     let attackToRoll =  this.getAttackById(n)
    this.valore =  Number(attackToRoll.mod) + Number(attackToRoll.bonus) + Number(attackToRoll.bab);
 
-    this.rollResult = Math.floor(Math.random() * (20 - 1)) + 1;
+    this.rollResult = Math.floor(Math.random() * (21 - 1)) + 1;
     this.valore = this.valore + this.rollResult
 
 
@@ -112,7 +112,7 @@ console.log(this.countId)
      let attackToRoll =  this.getAttackById(this.listAttack[n].id)
     this.valore =  Number(attackToRoll.mod) + Number(attackToRoll.bonus) + Number(attackToRoll.bab);
 
-     this.rollResult = Math.floor(Math.random() * (20 - 1)) + 1;
+     this.rollResult = Math.floor(Math.random() * (21 - 1)) + 1;
      this.valore = this.valore + this.rollResult
 
 
