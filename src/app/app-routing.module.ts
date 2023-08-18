@@ -6,7 +6,7 @@ import { TalentsComponent } from './components/talents/talents.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ManualsComponent } from './components/manuals/manuals.component';
 import { ToolsComponent } from './components/tools/tools.component';
-import { AttackComponent } from './components/tools/attack/attack.component';
+import { AttackComponent } from './components/attack/attack.component';
 
 const routes: Routes = [
   {path: "", component:HomepageComponent},
@@ -21,7 +21,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
