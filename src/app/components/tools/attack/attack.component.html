@@ -29,7 +29,7 @@
 
                   <div *ngFor="let attacco of listAttack; let i = index " class="multiAttack" >
 
-                    <button id="attacco{{attacco.id}}"  class="btn btn-outline-primary my-1" (click)="saveAttackIntoMultiAttack1(i)"  > attacco{{attacco.id}}</button>
+                    <button id="attacco{{i}}"  class="btn btn-outline-primary my-1" (click)="saveAttackIntoMultiAttack1(i)"  >attacco{{i+1}}</button>
                     <div *ngIf="attacco.listMultiAttackIsPresent.multiAttack1">
                       <svg style="background-color: #0d6efd; border-radius: 50%" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-check" viewBox="0 0 16 16">
                         <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
@@ -70,7 +70,7 @@
 
                   <div *ngFor="let attacco of listAttack; let i = index " class="multiAttack" >
 
-                    <button id="attacco{{attacco.id}}"  class='btn btn-outline-primary my-1' (click)="saveAttackIntoMultiAttack2(i)"  > attacco{{attacco.id}}</button>
+                    <button id="attacco{{i}}"  class='btn btn-outline-primary my-1' (click)="saveAttackIntoMultiAttack2(i)"  > attacco{{i+1}}</button>
                     <div *ngIf="attacco.listMultiAttackIsPresent.multiAttack2">
                       <svg style="background-color: #0d6efd; border-radius: 50%" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-check" viewBox="0 0 16 16">
                         <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
@@ -113,7 +113,7 @@
 
                   <div *ngFor="let attacco of listAttack; let i = index " class="multiAttack" >
 
-                    <button id="attacco{{attacco.id}}"  class='btn btn-outline-primary my-1' (click)="saveAttackIntoMultiAttack3(i)"  > attacco{{attacco.id}}</button>
+                    <button id="attacco {{i}}"  class='btn btn-outline-primary my-1' (click)="saveAttackIntoMultiAttack3(i)"  > attacco{{i+1}}</button>
                     <div *ngIf="attacco.listMultiAttackIsPresent.multiAttack3">
                       <svg style="background-color: #0d6efd; border-radius: 50%" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-check" viewBox="0 0 16 16">
                         <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
@@ -153,7 +153,7 @@
 
                   <div *ngFor="let attacco of listAttack; let i = index " class="multiAttack" >
 
-                    <button id="attacco{{attacco.id}}"  class='btn btn-outline-primary my-1'  (click)="saveAttackIntoMultiAttack4(i)"  > attacco{{attacco.id}}</button>
+                    <button id="attacco {{i}}"  class='btn btn-outline-primary my-1'  (click)="saveAttackIntoMultiAttack4(i)"  > attacco{{i+1}}</button>
                     <div *ngIf="attacco.listMultiAttackIsPresent.multiAttack4">
                       <svg style="background-color: #0d6efd; border-radius: 50%" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-check" viewBox="0 0 16 16">
                         <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
@@ -187,10 +187,10 @@
 
 <div class="row ">
   <div class="  col-sm-12 col-xl-4 col-md-6  " *ngFor="let single of listAttack;let i = index">
-    <div class="card ">
+    <div class="card " style="margin-left: 1vw; margin-bottom: 1vh">
       <div class="card-body">
         <div class="col-12">
-          <h5 class="card-title">attacco {{single.id}}</h5>
+          <h5 class="card-title">attacco {{i+1}}</h5>
         </div>
         <div class="row ">
           <div class="col-6">
@@ -202,21 +202,19 @@
         </div>
         <div class="row">
           <div class="col-6">
-            <h3>1d20 + </h3>
+            <h4>1d20 + {{single.totTXC}}</h4>
           </div>
           <div class="col-6">
-            <h3> (?d?) + </h3>
+            <h4> {{single.nDadi}}d{{single.tipoDado}} + {{single.totDanni}}</h4>
           </div>
         </div>
-        <div class="row ">
+        <div class="row justify-content-center">
           <div class="col-4 ">
-            <button class="btn btn-primary " style="margin-bottom: 1vh;" type="button"   id="lanciaBTN" (click)="roll(i); play()">TxC</button>
-            <button class="btn btn-primary " type="button"   id="lanciaBTN" (click)="roll(i); play()">danni </button>
+            <button class="btn btn-primary " style="margin-bottom: 1vh;" type="button"   id="lanciaBTN" (click)="rollTXCByAttack(getAttackById(listAttack[i].id),i); play()">TxC</button>
+            <button class="btn btn-primary " type="button"   id="lanciaBTN" (click)="rollDanniByAttack(getAttackById(listAttack[i].id),i); play()">danni </button>
           </div>
           <div class="col-4">
-            <button class="btn btn-primary "  type="button">modifica</button>
-          </div>
-          <div class="col-4">
+            <button class="btn btn-primary " style="margin-bottom: 1vh;" (click)="saveIdToUpdate(i)"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">modifica</button>
             <button class="btn btn-danger" type="button" (click)="delete(i)">elimina</button>
           </div>
         </div>
@@ -236,7 +234,7 @@
       </button>
           <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
             <div class="offcanvas-header">
-              <h5 id="offcanvasTopLabel">Parametri attacchi</h5>
+         
 
 
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -245,18 +243,18 @@
 
               <form
               #attack="ngForm"
-              (ngSubmit)="saveAttack(attack)">
+              (ngSubmit)="this.idToUpdate == null? saveAttack(attack):updateAttackById(attack)">
 
            <div class="grid-container">
 
-
+            <h1 class="elemento "> Parametri TXC</h1>
 
               <div class="elemento">
-               <div style="width: 20vw;">
-                  <h3 class="text-break"> mod for / int / des</h3>
-                </div>
-                  <select class="form-select"   reqiured    ngModel="0"
-                  name="mod">
+            
+                  <h3 class="text-break"> mod </h3>
+                
+                  <select class="form-select "   reqiured    [(ngModel)] ="modTXC"
+                  name="modTXC">
                     <option value="0" selected> 0 </option>
                     <option value="1"> 1 </option>
                     <option value="2"> 2 </option>
@@ -292,9 +290,9 @@
               </div>
 
               <div class="elemento">
-                  <h3>bonus vari</h3>
-                  <select class="form-select"  reqiured     ngModel="0"
-                  name="bonus">
+                  <h3>bonus TXC</h3>
+                  <select class="form-select"  reqiured       [(ngModel)] ="bonusTXC"
+                  name="bonusTXC">
                     <option value="0" selected> 0 </option>
                       <option value="1"> 1 </option>
                       <option value="2"> 2 </option>
@@ -311,7 +309,7 @@
 
               <div class="elemento">
                   <h3>bab</h3>
-                  <select class="form-select"   reqiured    ngModel="0"
+                  <select class="form-select"   reqiured      [(ngModel)] ="bab"
                   name="bab">
                     <option value="0" selected > 0 </option>
                     <option value="1"> 1 </option>
@@ -347,11 +345,147 @@
                   </select>
               </div>
 
-              <div class="elemento ">
-                  <button class="btn btn-primary " type="submit"   data-bs-dismiss="offcanvas" aria-label="Close"> salva</button>
-              </div>
+       
 
+           
+
+          <h1 class="elemento " > Parametri danni</h1>
+           <div class="elemento">
+         
+               <h3 class="text-break"> dadi</h3>
+             <div class="d-flex align-items-baseline">
+               <select class="form-select mx-2 "   reqiured      [(ngModel)] ="nDadi"
+               name="nDadi">
+                 <option value="1"selected> 1 </option>
+                 <option value="2"> 2 </option>
+                 <option value="3"> 3 </option>
+                 <option value="4"> 4 </option>
+                 <option value="5"> 5 </option>
+                 <option value="6"> 6 </option>
+                 <option value="7"> 7 </option>
+                 <option value="8"> 8 </option>
+                 <option value="9"> 9 </option>
+                 <option value="10"> 10 </option>
+                 <option value="11"> 11 </option>
+                 <option value="12"> 12 </option>
+                 <option value="13"> 13 </option>
+                 <option value="14"> 14 </option>
+                 <option value="15"> 15 </option>
+                 <option value="16"> 16 </option>
+                 <option value="17"> 17 </option>
+                 <option value="18"> 18 </option>
+                 <option value="19"> 19 </option>
+                 <option value="20"> 20 </option>
+                 <option value="21"> 21 </option>
+                 <option value="22"> 22 </option>
+                 <option value="23"> 23 </option>
+                 <option value="24"> 24 </option>
+                 <option value="25"> 25 </option>
+                 <option value="26"> 26 </option>
+                 <option value="27"> 27 </option>
+                 <option value="28"> 28 </option>
+                 <option value="29"> 29 </option>
+                 <option value="30"> 30 </option>
+               </select>
+               <h3  style="text-transform: lowercase;">d</h3>
+               <select class="form-select mx-2"  reqiured      [(ngModel)] ="tipoDado"
+               name="tipoDado">
+
+                 <option value="4"> 4 </option>
+                 <option value="6" selected> 6 </option>
+                 <option value="8"> 8 </option>
+                 <option value="10"> 10 </option>
+                 <option value="12"> 12 </option>
+                 <option value="20"> 20 </option>
+               </select>
            </div>
+          </div>
+
+           <div class="elemento">
+               <h3>bonus danni</h3>
+               <select class="form-select"  reqiured      [(ngModel)] ="bonusDanni"
+               name="bonusDanni">
+                 <option value="0" selected> 0 </option>
+                   <option value="1"> 1 </option>
+                   <option value="2"> 2 </option>
+                   <option value="3"> 3 </option>
+                   <option value="4"> 4 </option>
+                   <option value="5"> 5 </option>
+                   <option value="6"> 6 </option>
+                   <option value="7"> 7 </option>
+                   <option value="8"> 8 </option>
+                   <option value="9"> 9 </option>
+                   <option value="10"> 10 </option>
+                   <option value="11"> 11 </option>
+                   <option value="12"> 12 </option>
+                   <option value="13"> 13 </option>
+                   <option value="14"> 14 </option>
+                   <option value="15"> 15 </option>
+                   <option value="16"> 16 </option>
+                   <option value="17"> 17 </option>
+                   <option value="18"> 18 </option>
+                   <option value="19"> 19 </option>
+                   <option value="20"> 20 </option>
+                   <option value="21"> 21 </option>
+                   <option value="22"> 22 </option>
+                   <option value="23"> 23 </option>
+                   <option value="24"> 24 </option>
+                   <option value="25"> 25 </option>
+                   <option value="26"> 26 </option>
+                   <option value="27"> 27 </option>
+                   <option value="28"> 28 </option>
+                   <option value="29"> 29 </option>
+                   <option value="30"> 30 </option>
+               </select>
+               
+           </div>
+
+           <div class="elemento">
+               <h3>mod danni</h3>
+               <select class="form-select"   reqiured     [(ngModel)] ="modDanni"
+               name="modDanni">
+                 <option value="0" selected > 0 </option>
+                 <option value="1"> 1 </option>
+                 <option value="2"> 2 </option>
+                 <option value="3"> 3 </option>
+                 <option value="4"> 4 </option>
+                 <option value="5"> 5 </option>
+                 <option value="6"> 6 </option>
+                 <option value="7"> 7 </option>
+                 <option value="8"> 8 </option>
+                 <option value="9"> 9 </option>
+                 <option value="10"> 10 </option>
+                 <option value="11"> 11 </option>
+                 <option value="12"> 12 </option>
+                 <option value="13"> 13 </option>
+                 <option value="14"> 14 </option>
+                 <option value="15"> 15 </option>
+                 <option value="16"> 16 </option>
+                 <option value="17"> 17 </option>
+                 <option value="18"> 18 </option>
+                 <option value="19"> 19 </option>
+                 <option value="20"> 20 </option>
+                 <option value="21"> 21 </option>
+                 <option value="22"> 22 </option>
+                 <option value="23"> 23 </option>
+                 <option value="24"> 24 </option>
+                 <option value="25"> 25 </option>
+                 <option value="26"> 26 </option>
+                 <option value="27"> 27 </option>
+                 <option value="28"> 28 </option>
+                 <option value="29"> 29 </option>
+                 <option value="30"> 30 </option>
+               </select>
+           </div>
+
+           <div class="elemento ">
+               <button class="btn btn-primary " type="submit"   data-bs-dismiss="offcanvas" aria-label="Close"> salva</button>
+           </div>
+
+        </div>
+
+
+
               </form>
             </div>
           </div>

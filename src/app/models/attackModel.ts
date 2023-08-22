@@ -1,14 +1,22 @@
 export class attackModel {
 
-
+totTXC:number = 0;
+totDanni:number = 0;
 
   constructor(
   public id:number,
-  public mod:number,
-  public bonus:number,
+  public modTXC:number,
+  public bonusTXC:number,
   public bab: number,
+  public nDadi: number,
+  public tipoDado:number,
+  public bonusDanni:number,
+  public modDanni:number,
   public listMultiAttackIsPresent : listMultiAttackIsPresent
-  ) {}
+  ) {
+    this.totTXC =  Number(modTXC) + Number(bonusTXC) + Number(bab)
+    this.totDanni = Number(bonusDanni) + Number(modDanni)
+  }
   }
 
 
