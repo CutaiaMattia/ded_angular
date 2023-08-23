@@ -525,7 +525,7 @@
     <div class="offcanvas-body">
       <div *ngFor="let result of storyText">
 
-        <pre>  {{result}}</pre>
+        <p [innerHTML]="result">  </p>
 
       </div>
 

@@ -1,5 +1,6 @@
 import { AfterContentChecked, Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { attackModel, listMultiAttackIsPresent } from 'src/app/models/attackModel';
 
 @Component({
@@ -8,7 +9,7 @@ import { attackModel, listMultiAttackIsPresent } from 'src/app/models/attackMode
   styleUrls: ['./attack.component.css']
 })
 export class AttackComponent implements OnInit, AfterContentChecked {
-constructor(){
+constructor( private sanitizer: DomSanitizer){
 
 }
 
@@ -31,14 +32,15 @@ constructor(){
     this.countId = JSON.parse(localStorage.getItem("attacks")!) ?JSON.parse(localStorage.getItem("attacks")!).length+1:1
 console.log(this.countId)
   }
+  
 
   countId :number = 1;
   valore: number
   rollResult: number
   listAttack : attackModel[]
   attack : attackModel
-  textRoll: string
-  storyText: string[] = []
+  textRoll: string |SafeHtml
+  storyText: any[]  = []
   idToUpdate : any
   modTXC:number = 0
   bonusTXC:number = 0
@@ -50,10 +52,7 @@ console.log(this.countId)
 
 
 
-  deleteStoryText(){
-    this.storyText = []
-  }
-
+//animation 
 
    play() {
     document.querySelector("#offcanvasBTN")!.className = "btn btn-primary  ";
@@ -65,6 +64,7 @@ console.log(this.countId)
   }
 
 
+//   ----------------------------
 
 
 
@@ -78,7 +78,7 @@ console.log(this.countId)
   //roll txc and damage
 
   rollDanniByAttack(attackToRoll:attackModel, i:number){
-    this.textRoll = "DANNI -> attacco " +(i+1)+" :"
+    this.textRoll =this.sanitizer.bypassSecurityTrustHtml('<h5 style="color:blue;"> DANNI </h5> <h5 style="margin-left: 1em;" >attacco ' +(i+1)+' :</h5>')
     this.storyText.push(this.textRoll)
   
    this.valore =  0
@@ -86,12 +86,13 @@ console.log(this.countId)
     this.rollResult = Math.floor(Math.random() * attackToRoll.tipoDado) + 1;
     this.valore = this.valore + Number(attackToRoll.totDanni) + this.rollResult
   
-    this.storyText.push("    tiro "+ i +" : dado -> " + this.rollResult + " + " + attackToRoll.totDanni )
+    this.storyText.push(this.sanitizer.bypassSecurityTrustHtml(
+      "<h5 style=' margin-left: 2em;'> tiro "+ i +" : dado -> " + this.rollResult + " + " + attackToRoll.totDanni +"</h5>"))
    }
   
-    this.textRoll = "totale = "+  this.valore
-     this.storyText.push(this.textRoll)
-  
+   this.storyText.push(this.sanitizer.bypassSecurityTrustHtml(
+    "<h3 style=''> totale =  " + this.valore +" </h3>"))
+
      this.storyText.push("\n")
   
   }
@@ -99,7 +100,7 @@ console.log(this.countId)
 
   rollTXCByAttack(attackToRoll:attackModel, i:number){
 
-    this.textRoll = "TXC -> attacco " +(i+1)+" :"
+    this.textRoll = this.sanitizer.bypassSecurityTrustHtml('<h5 style="color:blue;"> TXC </h5> <h5 style="margin-left: 1em;" >attacco ' +(i+1)+' :</h5>')
     this.storyText.push(this.textRoll)
 
 
@@ -107,8 +108,22 @@ console.log(this.countId)
     this.rollResult = Math.floor(Math.random() * 20) + 1;
     this.valore = this.valore + this.rollResult
 
+    if(this.rollResult == 1){
+      this.textRoll = this.sanitizer.bypassSecurityTrustHtml("<h5 style='color:red; margin-left: 2em;'>   dado = "+ this.rollResult + " totale = "+  this.valore +"</h5>")
+    } else if(this.rollResult == 20){
 
-    this.textRoll = "   dado = "+this.rollResult + " totale = "+  this.valore
+
+
+      this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
+        "<h5 style='color : green; margin-left: 2em;'>   dado = "+ this.rollResult + " totale = "+  this.valore +"</h5>")
+    
+    
+    
+    } else{
+      this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
+        "<h5 style=' margin-left: 2em;'>   dado = "+ this.rollResult + " totale = "+  this.valore +"</h5>")
+    }
+  
      this.storyText.push(this.textRoll)
 
      this.storyText.push("\n")
@@ -120,6 +135,10 @@ console.log(this.countId)
 
 
 //CRUD method 
+
+  deleteStoryText(){
+  this.storyText = []
+  }
 
   delete(i:number){
     this.listAttack.splice(i,1)
@@ -299,14 +318,20 @@ console.log(this.countId)
 //TODO => replace with 1 method
 
   rollMultiAttack1() : void{
-    this.textRoll = "   --- multi attack 1 --- "
-    this.storyText.push(this.textRoll)
+    let isAlreadyPrint = false
+   
     let i = 0
     for(let single of this.listAttack) {
       if(single.listMultiAttackIsPresent.multiAttack1){
+        if(!isAlreadyPrint){
+          this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
+            "<h2>  --- multi attack 1 ---</h2>")
+          this.storyText.push(this.textRoll)
+          isAlreadyPrint = true
+        }
         this.rollTXCByAttack(single,i)
         this.rollDanniByAttack(single,i)
-        this.storyText.push("--------------")
+        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h2>----------------------------</h2>"))
       }
       i++;
     }
@@ -317,15 +342,21 @@ console.log(this.countId)
 
 
   rollMultiAttack2() : void{
+    let isAlreadyPrint = false
 
-    this.textRoll = "   --- multi attack 2 --- "
-    this.storyText.push(this.textRoll)
     let i = 0
     for(let single of this.listAttack) {
       if(single.listMultiAttackIsPresent.multiAttack2){
+        if(!isAlreadyPrint){
+          this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
+            "<h2>  --- multi attack 2 ---</h2>")
+          this.storyText.push(this.textRoll)
+          isAlreadyPrint = true
+        }
         this.rollTXCByAttack(single,i)
         this.rollDanniByAttack(single,i)
-        this.storyText.push("--------------")
+        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h2>----------------------------</h2>"))
+
       }
       i++;
     }
@@ -335,15 +366,20 @@ console.log(this.countId)
   }
 
   rollMultiAttack3() : void{
+    let isAlreadyPrint = false
 
-    this.textRoll = "   --- multi attack 3 --- "
-    this.storyText.push(this.textRoll)
     let i = 0
     for(let single of this.listAttack) {
       if(single.listMultiAttackIsPresent.multiAttack3){
+        if(!isAlreadyPrint){
+          this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
+            "<h2>  --- multi attack 3 ---</h2>")
+          this.storyText.push(this.textRoll)
+          isAlreadyPrint = true
+        }
         this.rollTXCByAttack(single,i)
         this.rollDanniByAttack(single,i)
-        this.storyText.push("--------------")
+        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h2>----------------------------</h2>"))
       }
       i++;
     }
@@ -355,14 +391,19 @@ console.log(this.countId)
 
 
   rollMultiAttack4() : void{
-    this.textRoll = "   ---multi attack 4 --- "
-    this.storyText.push(this.textRoll)
+    let isAlreadyPrint = false
     let i = 0
     for(let single of this.listAttack) {
       if(single.listMultiAttackIsPresent.multiAttack4){
+        if(!isAlreadyPrint){
+          this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
+            "<h2>  --- multi attack 4 ---</h2>")
+          this.storyText.push(this.textRoll)
+          isAlreadyPrint = true
+        }
         this.rollTXCByAttack(single,i)
         this.rollDanniByAttack(single,i)
-        this.storyText.push("--------------")
+        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h2>----------------------------</h2>"))
       }
       i++
     }

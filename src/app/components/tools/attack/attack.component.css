@@ -37,6 +37,14 @@ select{
     height: auto;
 }
 
+
+.color{
+color: red !important;
+}
+
+
+
+
 .elemento{
   justify-content: space-between;
   text-transform: inherit;
