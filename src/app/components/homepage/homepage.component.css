@@ -1,11 +1,9 @@
-div{
-  min-width: 320px;
-}
+
 
 .grid-container{
   display: grid;
   gap: 2em;
-  grid-template-areas: "uno" "due" ;
+  grid-template-areas: "uno" "due" "tre" "quattro";
 }
 
 .elemento:nth-child(1){
@@ -15,26 +13,37 @@ div{
 .elemento:nth-child(2) {
   grid-area: due;
   }
+  
+  .elemento:nth-child(3){
+    grid-area: tre;
+    }
+  
+  .elemento:nth-child(4) {
+    grid-area: quattro;
+    }
 
   .elemento{
     width: 30vw;
     height: 15vh;
   }
 
+  .subElemento{
+    height: 9vh;
+  }
 
 @media (max-width: 1920px) {
   .grid-container{
-    grid-template-areas:". . . . . ." ". . . . . ."
-    ". . . . . ." ". . . . . ." ". . . . . ." ". . . . . ." ". . . . . ."
-    ". . . . . ." ". . uno due . ." ". . . . . ." ". . . . . ."
-      ;
+    grid-template-areas:". . . . . ." ". . . . . ." ". . . . . ."
+    ". . . . . ." ". . uno due . ." ". . . . . ." ". . tre quattro . ."
+    ". . . . . ."  ". . . . . ."   ;
   }
 }
 
   @media (max-width: 480px ) {
     .grid-container{
-      grid-template-areas:". . . . ." ". . . . ."
-      ". . . . ." ". . uno . ." ". . due . ." ". . . . ."
+      grid-template-areas:". . . . ."
+      ". . . . ." ". . uno . ." ". . due . ." ". . tre . ."
+      ". . quattro . ." ". . . . ."
         ;
     }
   }

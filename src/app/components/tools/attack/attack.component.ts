@@ -21,16 +21,13 @@ constructor( private sanitizer: DomSanitizer){
 
   ngAfterContentChecked(): void {
     this.listAttack = JSON.parse(localStorage.getItem("attacks")!)
-    console.log(this.listAttack)
 
   }
 
   ngOnInit(): void {
-
-   console.log(localStorage.getItem("attacks"))
    this.listAttack = JSON.parse(localStorage.getItem("attacks")!)
     this.countId = JSON.parse(localStorage.getItem("attacks")!) ?JSON.parse(localStorage.getItem("attacks")!).length+1:1
-console.log(this.countId)
+
   }
   
 
@@ -134,7 +131,8 @@ console.log(this.countId)
 
 
 
-//CRUD method 
+//CRUD method
+
 
   deleteStoryText(){
   this.storyText = []
@@ -324,14 +322,15 @@ console.log(this.countId)
     for(let single of this.listAttack) {
       if(single.listMultiAttackIsPresent.multiAttack1){
         if(!isAlreadyPrint){
+          this.play()
           this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
-            "<h2>  --- multi attack 1 ---</h2>")
+            "<h3>  --- multi attack 1 ---</h3>")
           this.storyText.push(this.textRoll)
           isAlreadyPrint = true
         }
         this.rollTXCByAttack(single,i)
         this.rollDanniByAttack(single,i)
-        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h2>----------------------------</h2>"))
+        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h3>----------------------------</h3>"))
       }
       i++;
     }
@@ -348,14 +347,15 @@ console.log(this.countId)
     for(let single of this.listAttack) {
       if(single.listMultiAttackIsPresent.multiAttack2){
         if(!isAlreadyPrint){
+          this.play()
           this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
-            "<h2>  --- multi attack 2 ---</h2>")
+            "<h3>  --- multi attack 2 ---</h3>")
           this.storyText.push(this.textRoll)
           isAlreadyPrint = true
         }
         this.rollTXCByAttack(single,i)
         this.rollDanniByAttack(single,i)
-        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h2>----------------------------</h2>"))
+        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h3>----------------------------</h3>"))
 
       }
       i++;
@@ -372,14 +372,15 @@ console.log(this.countId)
     for(let single of this.listAttack) {
       if(single.listMultiAttackIsPresent.multiAttack3){
         if(!isAlreadyPrint){
+          this.play()
           this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
-            "<h2>  --- multi attack 3 ---</h2>")
+            "<h3>  --- multi attack 3 ---</h3>")
           this.storyText.push(this.textRoll)
           isAlreadyPrint = true
         }
         this.rollTXCByAttack(single,i)
         this.rollDanniByAttack(single,i)
-        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h2>----------------------------</h2>"))
+        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h3>----------------------------</h3>"))
       }
       i++;
     }
@@ -396,14 +397,15 @@ console.log(this.countId)
     for(let single of this.listAttack) {
       if(single.listMultiAttackIsPresent.multiAttack4){
         if(!isAlreadyPrint){
+          this.play()
           this.textRoll = this.sanitizer.bypassSecurityTrustHtml(
-            "<h2>  --- multi attack 4 ---</h2>")
+            "<h3>  --- multi attack 4 ---</h3>")
           this.storyText.push(this.textRoll)
           isAlreadyPrint = true
         }
         this.rollTXCByAttack(single,i)
         this.rollDanniByAttack(single,i)
-        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h2>----------------------------</h2>"))
+        this.storyText.push(this.sanitizer.bypassSecurityTrustHtml("<h3>----------------------------</h3>"))
       }
       i++
     }

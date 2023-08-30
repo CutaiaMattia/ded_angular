@@ -1,11 +1,43 @@
 <app-header></app-header>
+<!--
+<div *ngIf="errFormato" class="alert alert-danger d-flex align-items-center justify-content-center ">
+    <div>
+        Formato non supportato, il file ha l'estensione .txt
+    </div>
+    <button type="button"  class="btn-close" (click)="setErrFormato()" ></button>
 
-<div class="container-fluid grid-container">
+  </div>
 
+
+<div *ngIf="errCorrupt"  class="alert alert-danger d-flex align-items-center justify-content-center " >
+   
+    <div>
+        Il file .txt è errato o corrotto
+    </div>
+    <button type="button" class="btn-close" (click)="setErrCorrupt()" aria-label="Close"></button>
+
+  </div>
+
+-->
+
+
+
+<div class=" grid-container">
+
+    
 
 <button class="btn btn-primary elemento" routerLink="/tools"> TOOLS </button>
 
 <button  class="btn btn-primary elemento" routerLink="/manuals"> MANUALI </button>
 
+<button class="btn btn-primary  elemento subElemento" [disabled]="!isPossibleDownload()" (click)=" downloadFile()" > DOWNLOAD PROGRESS </button>
+
+<button class="btn btn-primary elemento subElemento" onclick="document.getElementById('myfile').click()"> UPLOAD PROGRESS</button>
 
 </div>
+
+
+
+<input type="file" id="myfile" (change)="uploadFile($event)" style="display:none;">
+
+
