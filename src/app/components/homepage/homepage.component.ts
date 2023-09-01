@@ -1,6 +1,6 @@
-import { ElementSchemaRegistry } from '@angular/compiler';
+import Swal from 'sweetalert2'
 import { Component } from '@angular/core';
-import { attackModel } from 'src/app/models/attackModel';
+
 
 @Component({
   selector: 'app-homepage',
@@ -29,7 +29,7 @@ isPossibleDownload():boolean{
       link.download = "data_ded_angual.txt";
       link.click();
       URL.revokeObjectURL(link.href);
-
+      document.getElementById('alert-success-download')?.click()
   }
 
   uploadFile(e:any){
@@ -38,27 +38,30 @@ isPossibleDownload():boolean{
   
 
 
-    readThis(inputValue: any) : void {
+    readThis(inputValue: any) : void {  
       try{
       var file:File = inputValue.files[0]; 
       var myReader:FileReader = new FileReader();
-      var testo
 
-      myReader.onload =  function(e) { 
+      myReader.onload =  (e) => { 
         if(file.name.match(".txt")!== null){
           try{
           JSON.parse(<string>myReader.result)
 
           localStorage.setItem("attacks", <any>myReader.result);
           }catch(err){
-            alert("Il file .txt è errato o corrotto")
+            document.getElementById('alert-corrupt')?.click()
+          //  alert("Il file .txt è errato o corrotto")
           }
-        } else{       
-            alert("Formato non supportato, il file ha l'estensione .txt")
-        }     
+        } else{   
+          document.getElementById('alert-format')?.click()
+            //alert("Formato non supportato, il file ha l'estensione .txt")
+        } 
+
       }
+      document.getElementById('alert-success-upload')?.click()
       myReader.readAsText(file);
-      console.log("result dopo onloadend" + myReader.result)
+      
     } catch(err){
       console.log(err)
         console.error("nessun file selezionato")
@@ -66,7 +69,27 @@ isPossibleDownload():boolean{
     }
   
 
- 
+ showAlertFormat(){
+  Swal.fire({
+    icon: 'error',
+    text: 'Formato non supportato, il file da inserire ha l\'estensione .txt',
+  })
+ }
+
+ showAlertCorrupt(){
+  Swal.fire({
+    icon: 'error',
+    text: 'Il file .txt è errato o corrotto',
+  })
+ }
+ showAlertSuccess(testo : string){
+  Swal.fire({
+    icon: 'success',
+    text: testo,
+  })
+ }
+
+
   }
 
 

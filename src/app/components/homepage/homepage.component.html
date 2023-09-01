@@ -20,7 +20,11 @@
 
 -->
 
+<button id="alert-corrupt" hidden (click)="showAlertCorrupt()"></button>
 
+<button id="alert-format" hidden (click)="showAlertFormat()"></button>
+<button id="alert-success-upload" hidden (click)="showAlertSuccess('file caricato')"></button>
+<button id="alert-success-download" hidden (click)="showAlertSuccess('download completato')"></button>
 
 <div class=" grid-container">
 
@@ -38,6 +42,6 @@
 
 
 
-<input type="file" id="myfile" (change)="uploadFile($event)" style="display:none;">
+<input type="file" id="myfile" onclick="this.value = null" (change)="uploadFile($event)" style="display:none;">
 
 

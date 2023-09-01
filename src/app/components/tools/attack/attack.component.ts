@@ -2,6 +2,9 @@ import { AfterContentChecked, Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { attackModel, listMultiAttackIsPresent } from 'src/app/models/attackModel';
+import Swal from 'sweetalert2';
+
+
 
 @Component({
   selector: 'app-attack',
@@ -37,6 +40,7 @@ constructor( private sanitizer: DomSanitizer){
   listAttack : attackModel[]
   attack : attackModel
   textRoll: string |SafeHtml
+  textHtml: string | SafeHtml
   storyText: any[]  = []
   idToUpdate : any
   modTXC:number = 0
@@ -241,7 +245,7 @@ constructor( private sanitizer: DomSanitizer){
   };
 
 
-// save single attack into multi attack n  (each method for many multi attack) 
+/* save single attack into multi attack n  (each method for many multi attack) 
 //TODO => replace with 1 method
 
   saveAttackIntoMultiAttack1(n:number){
@@ -255,7 +259,10 @@ constructor( private sanitizer: DomSanitizer){
           localStorage.setItem("attacks" , JSON.stringify(this.listAttack))
       }
     }
+    console.log("clickkato")
   }
+
+
 
 
   saveAttackIntoMultiAttack2(n:number){
@@ -301,8 +308,8 @@ constructor( private sanitizer: DomSanitizer){
     }
   }
 
-//   ----------------------------
 
+replace with swal  */ 
 
 
 
@@ -418,11 +425,159 @@ constructor( private sanitizer: DomSanitizer){
 //   ----------------------------
 
 
-  
 
+// sweet alert per multi attack
+
+async showMultiAttack1(){
+  var textToHtml ='<div style="display:flex; flex-direction:column; align-items: center;">';
+  for(let i = 0; i < this.listAttack.length; i++){
+    if(this.listAttack[i].listMultiAttackIsPresent.multiAttack1){
+    textToHtml = textToHtml + "<div style='display:flex; align-items: baseline;' > <strong style='margin-right:4vw' > attacco "+ (i+1) +"</strong>  <input type='checkbox' class='form-check-input' checked id='attacco"+(i+1)+"' > </div> "
+    }else{
+      textToHtml = textToHtml + "<div style='display:flex; align-items: baseline;' > <strong style='margin-right:4vw' > attacco "+ (i+1) +"</strong>  <input type='checkbox'  class='form-check-input' id='attacco"+(i+1)+"' > </div> "
+
+    }
+    if(i== this.listAttack.length){
+      textToHtml = textToHtml + "</div>"
+    }
+  }
+  const { value: formValues } = await Swal.fire({
+    title: '<h3> multi attack 1</h3>',
+   html: textToHtml,
+   scrollbarPadding:false,
+    allowEscapeKey:false,
+    allowOutsideClick:false,
+    showCloseButton: false,
+    preConfirm: () => {
+      var arr = []
+      for(let i = 0; i < this.listAttack.length; i++){
+        arr.push( (<any>document.getElementById('attacco'+(i+1)))?.checked)
+      }
+      return arr
+    }
+    
+  })
+
+  for(let i = 0; i < this.listAttack.length; i++){
+    this.listAttack[i].listMultiAttackIsPresent.multiAttack1 = formValues[i] 
+  }
+ 
+  localStorage.setItem("attacks" , JSON.stringify(this.listAttack))
+
+}
+
+async showMultiAttack2(){
+  var textToHtml ='<div style="display:flex; flex-direction:column; align-items: center;">';
+  for(let i = 0; i < this.listAttack.length; i++){
+    if(this.listAttack[i].listMultiAttackIsPresent.multiAttack2){
+    textToHtml = textToHtml + "<div style='display:flex; align-items: baseline;' > <strong style='margin-right:4vw' > attacco "+ (i+1) +"</strong>  <input type='checkbox' checked   class='form-check-input' id='attacco"+(i+1)+"' > </div> "
+    }else{
+      textToHtml = textToHtml + "<div style='display:flex; align-items: baseline;' > <strong style='margin-right:4vw' > attacco "+ (i+1) +"</strong>  <input type='checkbox'  class='form-check-input'  id='attacco"+(i+1)+"' > </div> "
+
+    }
+    if(i== this.listAttack.length){
+      textToHtml = textToHtml + "</div>"
+    }
+  }
+  const { value: formValues } = await Swal.fire({
+    title: '<h3> multi attack 2</h3>',
+   html: textToHtml,
+   scrollbarPadding:false,
+    allowEscapeKey:false,
+    allowOutsideClick:false,
+    showCloseButton: false,
+    preConfirm: () => {
+      var arr = []
+      for(let i = 0; i < this.listAttack.length; i++){
+        arr.push( (<any>document.getElementById('attacco'+(i+1)))?.checked)
+      }
+      return arr
+    }
+    
+  })
+  for(let i = 0; i < this.listAttack.length; i++){
+    this.listAttack[i].listMultiAttackIsPresent.multiAttack2 = formValues[i] 
+  }
+ 
+  localStorage.setItem("attacks" , JSON.stringify(this.listAttack))
+}
+
+
+
+async showMultiAttack3(){
+  var textToHtml ='<div style="display:flex; flex-direction:column; align-items: center;">';
+  for(let i = 0; i < this.listAttack.length; i++){
+    if(this.listAttack[i].listMultiAttackIsPresent.multiAttack3){
+    textToHtml = textToHtml + "<div style='display:flex; align-items: baseline;' > <strong style='margin-right:4vw' > attacco "+ (i+1) +"</strong>  <input type='checkbox' checked   class='form-check-input' id='attacco"+(i+1)+"' > </div> "
+    }else{
+      textToHtml = textToHtml + "<div style='display:flex; align-items: baseline;' > <strong style='margin-right:4vw' > attacco "+ (i+1) +"</strong>  <input type='checkbox'  class='form-check-input' id='attacco"+(i+1)+"' > </div> "
+
+    }
+    if(i== this.listAttack.length){
+      textToHtml = textToHtml + "</div>"
+    }
+  }
+  const { value: formValues } = await Swal.fire({
+    title: '<h3> multi attack 3</h3>',
+   html: textToHtml,
+   scrollbarPadding:false,
+    allowEscapeKey:false,
+    allowOutsideClick:false,
+    showCloseButton: false,
+    preConfirm: () => {
+      var arr = []
+      for(let i = 0; i < this.listAttack.length; i++){
+        arr.push( (<any>document.getElementById('attacco'+(i+1)))?.checked)
+      }
+      return arr
+    }
+    
+  })
+  for(let i = 0; i < this.listAttack.length; i++){
+    this.listAttack[i].listMultiAttackIsPresent.multiAttack3 = formValues[i] 
+  }
+ 
+  localStorage.setItem("attacks" , JSON.stringify(this.listAttack))
+}
+
+
+async showMultiAttack4(){
+  var textToHtml ='<div style="display:flex; flex-direction:column; align-items: center;">';
+  for(let i = 0; i < this.listAttack.length; i++){
+    if(this.listAttack[i].listMultiAttackIsPresent.multiAttack4){
+    textToHtml = textToHtml + "<div style='display:flex; align-items: baseline;' > <strong style='margin-right:4vw' > attacco "+ (i+1) +"</strong>  <input type='checkbox'  class='form-check-input' checked id='attacco"+(i+1)+"' > </div> "
+    }else{
+      textToHtml = textToHtml + "<div style='display:flex; align-items: baseline;' > <strong style='margin-right:4vw' > attacco "+ (i+1) +"</strong>  <input type='checkbox'  class='form-check-input' id='attacco"+(i+1)+"' > </div> "
+
+    }
+    if(i== this.listAttack.length){
+      textToHtml = textToHtml + "</div>"
+    }
+  }
+  const { value: formValues } = await Swal.fire({
+    title: '<h3> multi attack 4</h3>',
+   html: textToHtml,
+   scrollbarPadding:false,
+    allowEscapeKey:false,
+    allowOutsideClick:false,
+    showCloseButton: false,
+    preConfirm: () => {
+      var arr = []
+      for(let i = 0; i < this.listAttack.length; i++){
+        arr.push( (<any>document.getElementById('attacco'+(i+1)))?.checked)
+      }
+      return arr
+    }
+    
+  })
+  for(let i = 0; i < this.listAttack.length; i++){
+    this.listAttack[i].listMultiAttackIsPresent.multiAttack4 = formValues[i] 
+  }
+ 
+  localStorage.setItem("attacks" , JSON.stringify(this.listAttack))
+}
 
   }
-
 
 
 
